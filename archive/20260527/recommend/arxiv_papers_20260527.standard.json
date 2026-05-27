@@ -1,0 +1,382 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-27T20:45:44.341367+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [
+    {
+      "id": "2605.25956v1",
+      "source": "arxiv",
+      "title": "RAPTOR+: A Visually Grounded Vision-Language Framework to Improve Clinical Trust and Auditability in Automated Cancer Referral Processing",
+      "abstract": "Urgent suspected colorectal cancer (CRC) referrals create operational bottlenecks because semi-structured clinical documents often require manual review and transcription. The original RAPTOR system used Large Language Models for structured extraction but relied on a separate OCR stage, making it vulnerable to handwriting, layout variation, and loss of visual evidence linkage. We present RAPTOR+, a multimodal extension that uses Vision-Language Models (VLMs) for end-to-end referral understanding. We evaluate fine-tuned VLMs, commercial and open-source zero-shot VLMs, and the original OCR-based pipeline on 223 clinically curated CRC urgent referral forms. We also introduce a grounding-aware evaluation framework that measures both extraction accuracy and evidence localisation. Results show a clear grounding gap in zero-shot models. Gemini 2.5 Flash achieved 92.6% Reading Accuracy but only 1.2% Strict Safety. In contrast, fine-tuned Qwen3-VL-8B achieved 96.1% Reading Accuracy and 60.6% Strict Safety, substantially improving verifiable evidence grounding. These findings show that task-specific fine-tuning is essential for reliable, auditable clinical document understanding. RAPTOR+ enables extracted referral decisions to be linked to visual evidence, supporting safer and more efficient cancer referral triage.",
+      "authors": [
+        "Sofiat Abioye",
+        "Ufaq Khan",
+        "Shazad Ashraf",
+        "Anusha Jose",
+        "Benjamin Wallace",
+        "William Poulett",
+        "Adam Byfield",
+        "Lukman Akanbi",
+        "Muhammad Bilal"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-25T15:30:02+00:00",
+      "link": "https://arxiv.org/pdf/2605.25956v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "end-to-end VLM for clinical forms replaces OCR",
+      "llm_evidence_cn": "端到端VLM处理临床表单替代OCR",
+      "llm_evidence": "端到端VLM处理临床表单替代OCR",
+      "canonical_evidence": "端到端VLM处理临床表单替代OCR",
+      "llm_tldr_en": "RAPTOR+ uses Vision-Language Models for end-to-end clinical referral understanding without OCR, improving visual evidence linkage and trust.",
+      "llm_tldr_cn": "针对半结构化临床文档的OCR依赖问题，提出RAPTOR+，采用视觉语言模型进行端到端的转诊单理解，无需OCR步骤。在223份结肠癌转诊表单上评估，微调VLM优于OCR管线，并引入视觉基础机制提升可审计性和临床信任。",
+      "llm_tldr": "针对半结构化临床文档的OCR依赖问题，提出RAPTOR+，采用视觉语言模型进行端到端的转诊单理解，无需OCR步骤。在223份结肠癌转诊表单上评估，微调VLM优于OCR管线，并引入视觉基础机制提升可审计性和临床信任。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "Find papers on OCR free document understanding with multimodal large language models.",
+      "matched_requirement_id": "req-10",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.27365v1",
+      "source": "arxiv",
+      "title": "LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding",
+      "abstract": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded largely independently. This token-by-token decoding mismatches the coupled structure of box geometry and creates a practical inference bottleneck due to strictly sequential generation. We introduce LocateAnything, a unified generative grounding and detection framework based on Parallel Box Decoding (PBD). By decoding geometric elements such as bounding boxes and points as atomic units in a single step, LocateAnything preserves intra-box geometric coherence and unlocks substantial parallelism. We show that PBD improves both decoding throughput and localization accuracy. We further develop a scalable data engine and curate LocateAnything-Data, a large-scale dataset with more than 138 million training samples, substantially increasing data diversity for high-precision localization. Extensive evaluations show that LocateAnything advances the speed-accuracy frontier, achieving significantly higher decoding throughput while improving high-IoU localization quality across diverse benchmarks. The results highlight the complementary benefits of Parallel Box Decoding and large-scale training data in enabling efficient and precise unified visual grounding and detection.",
+      "authors": [
+        "Shihao Wang",
+        "Shilong Liu",
+        "Yuanguo Kuang",
+        "Xinyu Wei",
+        "Yangzhou Liu",
+        "Zhiqi Li",
+        "Yunze Man",
+        "Guo Chen",
+        "Andrew Tao",
+        "Guilin Liu",
+        "Jan Kautz",
+        "Lei Zhang",
+        "Zhiding Yu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "published": "2026-05-26T17:59:12+00:00",
+      "link": "https://arxiv.org/pdf/2605.27365v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "visual grounding and bounding box prediction with parallel box decoding",
+      "llm_evidence_cn": "并行框解码实现视觉定位与边界框预测",
+      "llm_evidence": "并行框解码实现视觉定位与边界框预测",
+      "canonical_evidence": "并行框解码实现视觉定位与边界框预测",
+      "llm_tldr_en": "LocateAnything introduces Parallel Box Decoding (PBD) for vision-language grounding, decoding bounding boxes as atomic units in one step, improving throughput and geometric coherence over sequential token decoding.",
+      "llm_tldr_cn": "现有视觉语言模型将边界框坐标序列化为多个标记，导致解码效率低且几何结构不连贯。为此，本文提出LocateAnything框架，基于并行框解码（PBD）技术，以原子单元方式一步解码边界框和点等几何元素，保持框内几何连贯性并实现并行加速。实验表明，PBD在视觉定位和检测任务上显著提升解码吞吐量和准确性，为高效高质量的视觉定位提供了新范式。",
+      "llm_tldr": "现有视觉语言模型将边界框坐标序列化为多个标记，导致解码效率低且几何结构不连贯。为此，本文提出LocateAnything框架，基于并行框解码（PBD）技术，以原子单元方式一步解码边界框和点等几何元素，保持框内几何连贯性并实现并行加速。实验表明，PBD在视觉定位和检测任务上显著提升解码吞吐量和准确性，为高效高质量的视觉定位提供了新范式。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "Find papers on visual grounding and bounding box prediction in document images.",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.26656v1",
+      "source": "arxiv",
+      "title": "DV-SFT: Direct Vision Supervision for Fine-Grained Visual Understanding",
+      "abstract": "Multimodal large language models are typically trained end-to-end to predict ground-truth answers, yet supervision signals are applied exclusively to text tokens. Visual tokens, the core carriers of visual information, are optimized only implicitly as part of the context, leading to coarse-grained visual understanding. Prior works attempt to supervise visual inputs but inevitably rely on auxiliary components such as additional decoders or forward passes, because visual tokens lack readily interpretable labels. This limits their practical applicability. In this work, we propose \\textbf{D}irect \\textbf{V}ision \\textbf{S}upervised \\textbf{F}ine-\\textbf{T}uning (DV-SFT), which constructs explicit, token-level supervision for visual tokens and trains them through the same next-token prediction objective used for text. Specifically, we exploit the direct vision--text correspondence in OCR-related scenarios and automatically label each visual token with the word in its corresponding image patch. DV-SFT treats the MLLM as a black box, requiring no architectural modifications or additional forward passes. Extensive experiments demonstrate the superiority of direct vision supervision. DV-SFT consistently outperforms standard SFT across three in-domain and four out-of-domain benchmarks. Further analyses show that vision supervision effectively enhances fine-grained visual understanding and achieves higher multimodal alignment efficiency.",
+      "authors": [
+        "Jianfei Zhao",
+        "Feng Zhang",
+        "Xin Sun",
+        "Chong Feng",
+        "Bing Wang",
+        "Zhixing Tan"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-26T07:41:48+00:00",
+      "link": "https://arxiv.org/pdf/2605.26656v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "direct vision supervision for fine-grained visual understanding in MLLMs",
+      "llm_evidence_cn": "在多模态大语言模型中直接视觉监督细粒度视觉理解",
+      "llm_evidence": "在多模态大语言模型中直接视觉监督细粒度视觉理解",
+      "canonical_evidence": "在多模态大语言模型中直接视觉监督细粒度视觉理解",
+      "llm_tldr_en": "DV-SFT proposes direct token-level supervision for visual tokens in multimodal LLMs via contrastive learning without auxiliary decoders, significantly improving fine-grained visual understanding and VQA accuracy.",
+      "llm_tldr_cn": "现有MLLMs仅对文本令牌提供监督，视觉令牌缺乏直接信号导致粗粒度理解。本文提出DV-SFT方法，通过对比学习构造显式视觉令牌级监督，无需额外解码器。在多个细粒度视觉理解基准上取得显著提升，证明了直接视觉监督的有效性。",
+      "llm_tldr": "现有MLLMs仅对文本令牌提供监督，视觉令牌缺乏直接信号导致粗粒度理解。本文提出DV-SFT方法，通过对比学习构造显式视觉令牌级监督，无需额外解码器。在多个细粒度视觉理解基准上取得显著提升，证明了直接视觉监督的有效性。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "multimodal large language model",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.27243v1",
+      "source": "arxiv",
+      "title": "Can Retrieval Heads See Images? Multimodal Retrieval Heads in Long-Context Vision-Language Models",
+      "abstract": "Large vision-language models increasingly rely on long-context modeling to reason over documents, hour-level videos, and long-horizon agent trajectories, requiring them to locate relevant evidence across interleaved text and images. Prior work has studied this behavior using retrieval heads in large language models, but its copy-based criterion does not directly apply when evidence appears in images. We introduce a multimodal retrieval head detection method that scores attention from question tokens to textual or visual evidence. With this method, we show that multimodal retrieval heads are sparse, intrinsic, and causally important: only 4.4-10.2% of attention heads account for 50% of the positive retrieval-score mass, and masking the top-5% selected heads drops MMLongBench-Doc from 48.2% to 5.7% and SlideVQA from 71.2% to 8.9%, while random-head masking is far less damaging. Further analysis shows that these heads are partly shared across modalities yet remain dynamic within each modality, with image retrieval heads changing more than text retrieval heads as context length and haystack modality change. Without further training, we find that these heads can also be used directly to rank visually rich documents: on MMDocIR, Qwen3-VL-8B selected-head scoring improves Recall@1 by 7.7/7.4 macro/micro points for page retrieval and 6.3/6.8 points for layout retrieval over the strongest reported baseline.",
+      "authors": [
+        "Aaron Branson Cigres Li",
+        "Zhaowei Wang",
+        "Yu Zhao",
+        "Yiming Du",
+        "Haobo Li",
+        "Xiyu Ren",
+        "Ginny Wong",
+        "Simon See",
+        "Lishu Luo",
+        "Haodong Duan",
+        "Pasquale Minervini",
+        "Yangqiu Song"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-26T16:24:29+00:00",
+      "link": "https://arxiv.org/pdf/2605.27243v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "multimodal retrieval heads for evidence grounding",
+      "llm_evidence_cn": "多模态检索头用于证据定位",
+      "llm_evidence": "多模态检索头用于证据定位",
+      "canonical_evidence": "多模态检索头用于证据定位",
+      "llm_tldr_en": "Identifies multimodal retrieval heads in VLMs that locate visual evidence, crucial for document long-context reasoning.",
+      "llm_tldr_cn": "大型视觉语言模型处理文档时需在图文间定位证据，但现有检索头检测方法仅适用于文本。本文提出多模态检索头检测方法，发现仅4.4-10.2%的注意力头贡献50%的检索得分，这些头稀疏、内在且因果重要，为视觉基础提供机制解释。",
+      "llm_tldr": "大型视觉语言模型处理文档时需在图文间定位证据，但现有检索头检测方法仅适用于文本。本文提出多模态检索头检测方法，发现仅4.4-10.2%的注意力头贡献50%的检索得分，这些头稀疏、内在且因果重要，为视觉基础提供机制解释。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2605.26460v1",
+      "source": "arxiv",
+      "title": "AnchorDiff: Training-Free Concept Grounding for MM-DiTs via Anchor-Based Graph Propagation",
+      "abstract": "Multi-Modal Diffusion Transformers (MM-DiTs) encode rich representations for training-free concept grounding, but existing attention-based methods often produce overlapping activations on visually confusable concepts, a failure mode we call concept leakage, where target responses spill over to non-target objects. To address this issue, we propose AnchorDiff, a training-free grounding method that decouples semantic localization from structural refinement. AnchorDiff selects a high-confidence anchor from concept-to-image attention map and propagates it as a one-hot seed over a hybrid graph derived from image-to-image self-attention. The graph uses output-space similarity for dense within-object propagation and a row-wise attention gate to suppress cross-object connections. Additionally, we introduce the Multi-Concept Confusion Dataset, which contains images with multiple visually similar concepts and separate masks, enabling explicit evaluation of concept leakage. Experiments show that AnchorDiff achieves strong grounding performance on ImageNet-Segmentation and PascalVOC, while substantially reducing concept leakage on our Multi-Concept Confusion Dataset.",
+      "authors": [
+        "Jian Zhang",
+        "Zhijun Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-05-26T02:17:29+00:00",
+      "link": "https://arxiv.org/pdf/2605.26460v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "training-free concept grounding for visual grounding",
+      "llm_evidence_cn": "无训练概念定位，有助于视觉定位任务",
+      "llm_evidence": "无训练概念定位，有助于视觉定位任务",
+      "canonical_evidence": "无训练概念定位，有助于视觉定位任务",
+      "llm_tldr_en": "Proposes AnchorDiff, a training-free grounding method for MM-DiTs that uses anchor-based graph propagation to mitigate concept leakage, improving localization accuracy.",
+      "llm_tldr_cn": "针对多模态扩散Transformer中概念泄漏导致定位不准确的问题，提出AnchorDiff方法，通过从概念到图像的注意力图选择高置信度锚点，并在自注意力图上进行图传播，实现无训练的概念定位。实验表明该方法有效减少概念泄漏，提升定位性能，为视觉定位提供了一种高效的无训练方案。",
+      "llm_tldr": "针对多模态扩散Transformer中概念泄漏导致定位不准确的问题，提出AnchorDiff方法，通过从概念到图像的注意力图选择高置信度锚点，并在自注意力图上进行图传播，实现无训练的概念定位。实验表明该方法有效减少概念泄漏，提升定位性能，为视觉定位提供了一种高效的无训练方案。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.19309v2",
+      "source": "arxiv",
+      "title": "How Do Document Parsers Break? Auditing Structural Vulnerability in Document Intelligence",
+      "abstract": "Document Layout Analysis (DLA) pipelines provide structured page representations for retrieval-augmented generation, long-document question answering, and other document intelligence systems, yet their robustness evaluation remains largely area-centric. We identify this Footprint Bias and propose ProSA, a lightweight output-level auditing framework that decouples controlled probing, policy-driven targeting, and structure-aware diagnosis. ProSA combines Block-level Structural Loss Rate (B-SLR), granularity-aware exposure descriptors, and pathway attribution to analyze where structural identity is lost, at what exposure granularity failures emerge, and how failures propagate. Across MinerU and PP-StructureV3 on 1,000 pages, affected area weakly tracks perturbation-induced OCR instability (R^2=0.384/0.110), whereas B-SLR aligns much more closely with it (R^2=0.727/0.916). Exposure descriptors further separate occlusion- and topology-dominant pathways, while matched-footprint structural probes cause much larger downstream QA/retrieval degradation compared to area-matched erasure. These results shift DLA robustness evaluation from footprint-based stress testing toward structure-aware vulnerability auditing.",
+      "authors": [
+        "Yue Chen",
+        "Yihao Wang",
+        "Ziyi Tang",
+        "Yongsen Zheng",
+        "Keze Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-05-19T03:44:09+00:00",
+      "link": "https://arxiv.org/pdf/2605.19309v2",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "auditing structural vulnerability in document parsers",
+      "llm_evidence_cn": "审计文档解析器的结构脆弱性",
+      "llm_evidence": "审计文档解析器的结构脆弱性",
+      "canonical_evidence": "审计文档解析器的结构脆弱性",
+      "llm_tldr_en": "ProSA is a lightweight framework to audit document layout analysis pipelines for structural failures.",
+      "llm_tldr_cn": "文档布局分析管线在检索增强生成等系统中广泛使用，但其鲁棒性评估存在区域中心偏差。本文提出ProSA轻量级审计框架，通过解耦控制探测和结构感知诊断，在MinerU和PP-StructureV3上发现大量结构丢失模式，揭示了文档解析器在特定布局下的脆弱性。",
+      "llm_tldr": "文档布局分析管线在检索增强生成等系统中广泛使用，但其鲁棒性评估存在区域中心偏差。本文提出ProSA轻量级审计框架，通过解耦控制探测和结构感知诊断，在MinerU和PP-StructureV3上发现大量结构丢失模式，揭示了文档解析器在特定布局下的脆弱性。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "document understanding",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.24675v1",
+      "source": "arxiv",
+      "title": "VaaWIT: Visual-Aware Adaptation of Large Language Models for Multilingual Web Image Translation",
+      "abstract": "Translating text embedded in Web images is crucial for improving content accessibility and cross-lingual information retrieval, particularly within social media and e-commerce domains. Although Large Vision-Language Models (LVLMs) have advanced multimodal understanding, applying them to Web image translation remains challenging due to the visual representation gap: standard encoders often prioritize high-level semantics over the fine-grained visual details required for recognizing diverse character morphologies. To address this challenge, we propose VaaWIT, an end-to-end framework that adapts Large Language Models for multilingual Web image translation. The framework introduces two key technical contributions: (1) a Dual-Stream Attention Module (DSAM), which facilitates bidirectional interaction between multilingual semantic features and detailed visual representations, thereby synthesizing unified features robust to textual variations; and (2) a Visual-Aware Adapter (VAA), a parameter-efficient fine-tuning strategy that dynamically injects these fused visual cues into the frozen LLM backbone. This design enables the model to align the visual context with linguistic reasoning effectively while minimizing computational costs. Extensive experiments on eight tasks on three public benchmarks demonstrate that VaaWIT significantly outperforms state-of-the-art (SOTA) open-source baselines and achieves competitive performance against proprietary models. These results validate the efficacy of integrating fine-grained visual perception into LLMs for complex Web content analysis.",
+      "authors": [
+        "Bo Li",
+        "Ronghao Chen",
+        "Ningyuan Deng",
+        "Huacan Wang",
+        "Shaolin Zhu",
+        "Lijie Wen"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-05-23T17:25:45+00:00",
+      "link": "https://arxiv.org/pdf/2605.24675v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "multilingual web image translation using LVLMs",
+      "llm_evidence_cn": "使用LVLM进行多语言网页图像翻译",
+      "llm_evidence": "使用LVLM进行多语言网页图像翻译",
+      "canonical_evidence": "使用LVLM进行多语言网页图像翻译",
+      "llm_tldr_en": "Proposes VaaWIT, an end-to-end framework adapting LVLMs for multilingual web image translation via dual-stream encoder to capture fine-grained visual details, addressing visual representation gap.",
+      "llm_tldr_cn": "针对网页图像翻译中视觉表征不足的问题，提出VaaWIT框架，通过双流编码器适配大语言模型，捕捉精细视觉细节以实现多语言翻译。实验表明该方法在翻译准确性和细节保留上优于现有模型，有助于跨语言信息检索和内容无障碍访问。",
+      "llm_tldr": "针对网页图像翻译中视觉表征不足的问题，提出VaaWIT框架，通过双流编码器适配大语言模型，捕捉精细视觉细节以实现多语言翻译。实验表明该方法在翻译准确性和细节保留上优于现有模型，有助于跨语言信息检索和内容无障碍访问。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "multimodal large language model",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.25781v1",
+      "source": "arxiv",
+      "title": "Double Triangle Annotation: A Scalable Human-in-the-Loop Framework for High-Precision Historical Document Annotation",
+      "abstract": "Evaluating structured-information extraction from historical documents at scale requires high-precision ground-truth annotations, yet traditional manual labeling is expensive and fully automated pipelines built on large language models are prone to hallucination. We propose Double Triangle Annotation, a two-layer human-in-the-loop framework that leverages cross-model consensus to automate the majority of annotation work while ensuring high-precision outputs. In the first layer, two architecturally independent Multimodal Large Language Models annotate each document in parallel; when they agree, the label is auto-accepted, and disagreements are routed to a human jury. A second layer cross-checks two such systems against each other, escalating residual conflicts to a domain expert. The framework rests on a single assumption -- error independence between models -- requires no distributional priors or task-specific calibration, and becomes more autonomous as model capability improves. On the Guides Rosenwald, a corpus of French medical directories spanning 1887-1906, the framework achieves a final Word Error Rate of 0.003. Applied at scale, model consensus auto-accepts over 85% of 13,595 fields. We release the resulting benchmark -- the first structured-extraction ground truth for the Rosenwald Guides -- to support future work on historical document processing.",
+      "authors": [
+        "Yi Ren"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-05-25T12:29:30+00:00",
+      "link": "https://arxiv.org/pdf/2605.25781v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "MLLM for document annotation",
+      "llm_evidence_cn": "使用多模态大语言模型进行文档标注",
+      "llm_evidence": "使用多模态大语言模型进行文档标注",
+      "canonical_evidence": "使用多模态大语言模型进行文档标注",
+      "llm_tldr_en": "Double Triangle Annotation uses two MLLMs in parallel to automate high-precision annotation for historical documents.",
+      "llm_tldr_cn": "针对历史文档结构化信息抽取的高精度标注成本高问题，提出双三角标注框架，利用两个独立多模态大语言模型并行标注，共识自动接受，分歧交人工陪审团，同时第二层交叉检查确保质量。实验证明该方法在保持高精度的同时大幅降低人工成本。",
+      "llm_tldr": "针对历史文档结构化信息抽取的高精度标注成本高问题，提出双三角标注框架，利用两个独立多模态大语言模型并行标注，共识自动接受，分歧交人工陪审团，同时第二层交叉检查确保质量。实验证明该方法在保持高精度的同时大幅降低人工成本。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "multimodal large language model",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.26712v1",
+      "source": "arxiv",
+      "title": "METATR: A Multilingual, Evolving Benchmark for Automatic Text Recognition",
+      "abstract": "Benchmarks that reflect the diversity and complexity of real-world documents are essential for accurately evaluating Automatic Text Recognition (ATR) systems, especially Vision-Large Language Models (vLLMs). Although recent models demonstrate impressive performance, they are often evaluated on datasets containing modern, printed texts mostly written in English, which limits their relevance to many practical applications. Therefore, selecting a model for a specific use case requires evaluating it on data that matches the target documents. This highlights the importance of representative benchmarks for real-world applications. In this paper, we introduce METATR (v1.0), a multilingual, evolving benchmark designed to evaluate ATR models across a wide range of documents, facilitating meaningful model comparison and selection. The benchmark was designed to maximize diversity by including documents from various public collections. These documents cover 29 languages and include texts with multiple scripts and layouts. Beyond the dataset itself, METATR defines a standardized prompting and normalization methodology and establishes a dynamic evaluation framework. This approach is intended to produce reproducible results while remaining extensible over time. We evaluated a wide range of state-of-the-art systems, including open-source models and closed-source models. Results are reported across various dimensions, including performance at the dataset and language levels, robustness to handwritten documents, and computational efficiency. Our findings show that, although proprietary models achieve the most consistent performance, substantial variability persists across scripts and layouts. Overall, METATR provides a multidimensional, practitioner-oriented framework for assessing multilingual ATR in real-world conditions and tracking progress as the field evolves.",
+      "authors": [
+        "Mélodie Boillet",
+        "Solène Tarride",
+        "Christopher Kermorvant"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-26T08:53:34+00:00",
+      "link": "https://arxiv.org/pdf/2605.26712v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "multilingual evolving benchmark for evaluating ATR models including vLLMs",
+      "llm_evidence_cn": "评估包括vLLM在内的自动文本识别模型的多语言演进基准",
+      "llm_evidence": "评估包括vLLM在内的自动文本识别模型的多语言演进基准",
+      "canonical_evidence": "评估包括vLLM在内的自动文本识别模型的多语言演进基准",
+      "llm_tldr_en": "Introduces METATR v1.0, a multilingual evolving benchmark for Automatic Text Recognition covering diverse real-world documents, enabling robust evaluation of vLLMs and other ATR systems across languages and document types.",
+      "llm_tldr_cn": "现有文本识别基准以英文和现代印刷体为主，缺乏多样性。提出METATR多语言演进基准，涵盖多种真实文档类型和语言，用于评估vLLM等ATR模型。该基准能更真实反映模型在实际场景中的性能，有助于选择适合特定文档的模型。",
+      "llm_tldr": "现有文本识别基准以英文和现代印刷体为主，缺乏多样性。提出METATR多语言演进基准，涵盖多种真实文档类型和语言，用于评估vLLM等ATR模型。该基准能更真实反映模型在实际场景中的性能，有助于选择适合特定文档的模型。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "OCR-free document parsing",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

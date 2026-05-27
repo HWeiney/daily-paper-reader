@@ -6,71 +6,49 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-18 ~ 2026-05-27
-- 运行时间：2026-05-27 10:02:18 UTC
+- 最新运行日期：2026-05-27
+- 运行时间：2026-05-27 20:51:31 UTC
 - 运行状态：成功
-- 本次总论文数：17
-- 精读区：6
-- 速读区：11
+- 本次总论文数：9
+- 精读区：4
+- 速读区：5
 
 ### 今日简报（AI）
-今日精读聚焦视觉文档理解与多页文档解析，重点学习两项9.0分研究工作。最值得关注的是通过结构化布局先验提升文档理解的鲁棒性，以及首个专门评测多页文档解析的基准MPDocBench-Parse。建议优先精读这两篇论文，并关注FastTab和MinerU-Popo等实用模型工具。
-- 详情：[/20260518-20260527/README](/20260518-20260527/README)
+1) 今日推荐9篇论文，精读两篇高分研究聚焦视觉-语言定位与临床可审计性。  
+2) 最值得关注方向：《RAPTOR+》提升癌症转诊处理的可审计信任度，《LocateAnything》实现快速并行框解码的视觉定位。  
+3) 可优先深挖视觉定位技术对医疗文档解析的可靠性提升，并关注多语言图像翻译中的视觉适配方法。
+- 详情：[/202605/27/README](/202605/27/README)
 
 ### 精读区论文标签
-1. [Structured Layout Priors for Robust Out-of-Distribution Visual Document Understanding](/20260518-20260527/2605.19866v1-structured-layout-priors-for-robust-out-of-distribution-visual-document-understanding)  
+1. [RAPTOR+: A Visually Grounded Vision-Language Framework to Improve Clinical Trust and Auditability in Automated Cancer Referral Processing](/202605/27/2605.25956v1-raptor-a-visually-grounded-vision-language-framework-to-improve-clinical-trust-and-auditability-in-automated-cancer-referral-processing)  
    标签：评分：9.0/10、query:du
-   evidence：带有布局先验的视觉文档理解
-2. [MPDocBench-Parse: Benchmarking Practical Multi-page Document Parsing](/20260518-20260527/2605.22100v1-mpdocbench-parse-benchmarking-practical-multi-page-document-parsing)  
+   evidence：端到端VLM处理临床表单替代OCR
+2. [LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding](/202605/27/2605.27365v1-locateanything-fast-and-high-quality-vision-language-grounding-with-parallel-box-decoding)  
    标签：评分：9.0/10、query:du
-   evidence：多页面文档解析基准，覆盖多种真实文档类型
-3. [From Recognition to Reasoning: Benchmarking and Enhancing MLLMs on Real-World Receipt Document Understanding](/20260518-20260527/2605.22413v1-from-recognition-to-reasoning-benchmarking-and-enhancing-mllms-on-real-world-receipt-document-understanding)  
-   标签：评分：9.0/10、query:du
-   evidence：基于多模态大语言模型的收据文档理解与无OCR提取
-4. [Double Triangle Annotation: A Scalable Human-in-the-Loop Framework for High-Precision Historical Document Annotation](/20260518-20260527/2605.25781v1-double-triangle-annotation-a-scalable-human-in-the-loop-framework-for-high-precision-historical-document-annotation)  
-   标签：评分：9.0/10、query:du
-   evidence：基于多模态大语言模型的高精度结构化文档标注
-5. [Vision Inference Former: Sustaining Visual Consistency in Multimodal Large Language Models](/20260518-20260527/2605.18160v1-vision-inference-former-sustaining-visual-consistency-in-multimodal-large-language-models)  
+   evidence：并行框解码实现视觉定位与边界框预测
+3. [DV-SFT: Direct Vision Supervision for Fine-Grained Visual Understanding](/202605/27/2605.26656v1-dv-sft-direct-vision-supervision-for-fine-grained-visual-understanding)  
    标签：评分：8.0/10、query:du
-   evidence：在多模态大语言模型中维持视觉一致性
-6. [How Do Document Parsers Break? Auditing Structural Vulnerability in Document Intelligence](/20260518-20260527/2605.19309v1-how-do-document-parsers-break-auditing-structural-vulnerability-in-document-intelligence)  
+   evidence：在多模态大语言模型中直接视觉监督细粒度视觉理解
+4. [Can Retrieval Heads See Images? Multimodal Retrieval Heads in Long-Context Vision-Language Models](/202605/27/2605.27243v1-can-retrieval-heads-see-images-multimodal-retrieval-heads-in-long-context-vision-language-models)  
    标签：评分：8.0/10、query:du
-   evidence：审计文档版面分析管道的结构脆弱性
+   evidence：多模态检索头用于证据定位
 
 ### 速读区论文标签
-1. [FastTab: A Fast Table Recognizer with a Tiny Recursive Module and 1D Transformers](/20260518-20260527/2605.22422v1-fasttab-a-fast-table-recognizer-with-a-tiny-recursive-module-and-1d-transformers)  
-   标签：评分：8.0/10、query:du
-   evidence：利用一维Transformer和网格构建进行布局感知的表格识别
-2. [MinerU-Popo: Universal Post-Processing Model for Structured Document Parsing](/20260518-20260527/2605.24973v1-mineru-popo-universal-post-processing-model-for-structured-document-parsing)  
-   标签：评分：8.0/10、query:du
-   evidence：结构化文档解析，包括边界框和版面重构
-3. [Do You Need Text Rectification? Soft Attention Mask Embedding for Rectification-Free Scene Text Spotting](/20260518-20260527/2605.18173v1-do-you-need-text-rectification-soft-attention-mask-embedding-for-rectification-free-scene-text-spotting)  
+1. [AnchorDiff: Training-Free Concept Grounding for MM-DiTs via Anchor-Based Graph Propagation](/202605/27/2605.26460v1-anchordiff-training-free-concept-grounding-for-mm-dits-via-anchor-based-graph-propagation)  
    标签：评分：7.0/10、query:du
-   evidence：文本检测中的边界框细化
-4. [Vision Harnessing Agent for Open Ad-hoc Segmentation](/20260518-20260527/2605.19410v1-vision-harnessing-agent-for-open-ad-hoc-segmentation)  
-   标签：评分：7.0/10、query:du
-   evidence：利用VLM智能体进行视觉定位的开放即兴分割
-5. [VISTAQA: Benchmarking Joint Visual Question Answering and Pixel-Level Evidence](/20260518-20260527/2605.20676v1-vistaqa-benchmarking-joint-visual-question-answering-and-pixel-level-evidence)  
-   标签：评分：7.0/10、query:du
-   evidence：联合评估视觉定位和视觉问答
-6. [Unveil: Unified Visual-Textual Integration and Distillation for Multi-modal Document Retrieval](/20260518-20260527/2605.24530v1-unveil-unified-visual-textual-integration-and-distillation-for-multi-modal-document-retrieval)  
-   标签：评分：7.0/10、query:du
-   evidence：多模态文档检索整合视觉与文本特征
-7. [GraSP-VL: Length as a Semantic Granularity Interface for Vision-Language Representations](/20260518-20260527/2605.17727v1-grasp-vl-length-as-a-semantic-granularity-interface-for-vision-language-representations)  
+   evidence：无训练概念定位，有助于视觉定位任务
+2. [How Do Document Parsers Break? Auditing Structural Vulnerability in Document Intelligence](/202605/27/2605.19309v2-how-do-document-parsers-break-auditing-structural-vulnerability-in-document-intelligence)  
    标签：评分：6.0/10、query:du
-   evidence：用于视觉语言模型的可控语义粒度接口
-8. [RAVE: Re-Allocating Visual Attention in Large Multimodal Models](/20260518-20260527/2605.18359v1-rave-re-allocating-visual-attention-in-large-multimodal-models)  
+   evidence：审计文档解析器的结构脆弱性
+3. [VaaWIT: Visual-Aware Adaptation of Large Language Models for Multilingual Web Image Translation](/202605/27/2605.24675v1-vaawit-visual-aware-adaptation-of-large-language-models-for-multilingual-web-image-translation)  
    标签：评分：6.0/10、query:du
-   evidence：改进多模态大模型的注意力机制
-9. [TIGER-FG: Text-Guided Implicit Fine-Grained Grounding for E-commerce Retrieval](/20260518-20260527/2605.18434v1-tiger-fg-text-guided-implicit-fine-grained-grounding-for-e-commerce-retrieval)  
+   evidence：使用LVLM进行多语言网页图像翻译
+4. [Double Triangle Annotation: A Scalable Human-in-the-Loop Framework for High-Precision Historical Document Annotation](/202605/27/2605.25781v1-double-triangle-annotation-a-scalable-human-in-the-loop-framework-for-high-precision-historical-document-annotation)  
    标签：评分：6.0/10、query:du
-   evidence：文本引导的隐式细粒度定位用于电商检索
-10. [Towards Camera-Robust 3D Localization: Equation-Anchored Tool-Use for MLLMs](/20260518-20260527/2605.19528v1-towards-camera-robust-3d-localization-equation-anchored-tool-use-for-mllms)  
+   evidence：使用多模态大语言模型进行文档标注
+5. [METATR: A Multilingual, Evolving Benchmark for Automatic Text Recognition](/202605/27/2605.26712v1-metatr-a-multilingual-evolving-benchmark-for-automatic-text-recognition)  
    标签：评分：6.0/10、query:du
-   evidence：多模态大语言模型中的3D视觉定位
-11. [SAVER: Selective As-Needed Vision Evidence for Multimodal Information Extraction](/20260518-20260527/2605.20713v1-saver-selective-as-needed-vision-evidence-for-multimodal-information-extraction)  
-   标签：评分：6.0/10、query:du
-   evidence：使用一致性可接地门控估计视觉可接地性，实现选择性视觉证据
+   evidence：评估包括vLLM在内的自动文本识别模型的多语言演进基准
 
 
 <div class="dpr-home-promo-card">
