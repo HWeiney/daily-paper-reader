@@ -1,0 +1,700 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-27T09:51:38.491944+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 8,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 13,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2605.19866v1",
+      "source": "arxiv",
+      "title": "Structured Layout Priors for Robust Out-of-Distribution Visual Document Understanding",
+      "abstract": "Vision-Language Models (VLMs) parse documents end-to-end but frequently break down on layouts unlike those seen in training. We attribute this to a two-hop bottleneck: before the decoder can extract content (Hop 2), it must first classify and localize the enclosing layout entity (Hop 1), and when the first hop fails the second collapses into omissions, malformed structure, or autoregressive repetition. We pre-resolve Hop 1 outside the decoder by running a lightweight RT-DETR detector, serializing its outputs in the parser's native DocTags vocabulary, and injecting them into the prompt alongside the full page image. Unlike analyze-then-parse approaches that crop the page, or prior prompt-level priors written in plain text, our prior shares the decoder's generation space and leaves the global image in view as a fallback when detections are noisy. On a 10k-page structural out-of-distribution benchmark, markdown F1 rises from $0.37$ to $0.92$; on the Chinese subset of OmniDocBench, table TEDS rises from $0.01$ to $0.36$; and on the 26k-page ViDoRe V3 benchmark, infinite-loop decoding failures drop across every industrial domain tested. These gains cost $15\\%$ wall-clock latency and a median of $74$ prompt tokens, with no architectural change to the base VLM. An attention-level analysis further reveals a bimodal phase shift in which the decoder attends to injected layout tokens when emitting structure and to image patches when emitting content, consistent with the two-hop bottleneck being alleviated. Model weights will be released to support reproducibility.",
+      "authors": [
+        "Peter El Hachem",
+        "Ahmed Nassar",
+        "A. Said Gurbuz",
+        "Christoph Auer",
+        "Peter W. J. Staar"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-19T13:58:24+00:00",
+      "link": "https://arxiv.org/pdf/2605.19866v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "visual document understanding with layout priors",
+      "llm_evidence_cn": "带有布局先验的视觉文档理解",
+      "llm_evidence": "带有布局先验的视觉文档理解",
+      "canonical_evidence": "带有布局先验的视觉文档理解",
+      "llm_tldr_en": "Structured Layout Priors improves out-of-distribution document parsing by pre-resolving layout entity classification and localization outside the decoder.",
+      "llm_tldr_cn": "视觉语言模型在解析文档时对未见布局容易失败，归因于先分类定位布局实体（第一步）再提取内容（第二步）的两跳瓶颈。本文在解码器外部预先解决第一步：使用轻量级RT-DETR检测器，将其输出序列化为解析器的DocTags词汇并注入提示。实验表明，该方法显著提升了分布外布局的鲁棒性，适用于票据、证件等复杂文档的结构化抽取。",
+      "llm_tldr": "视觉语言模型在解析文档时对未见布局容易失败，归因于先分类定位布局实体（第一步）再提取内容（第二步）的两跳瓶颈。本文在解码器外部预先解决第一步：使用轻量级RT-DETR检测器，将其输出序列化为解析器的DocTags词汇并注入提示。实验表明，该方法显著提升了分布外布局的鲁棒性，适用于票据、证件等复杂文档的结构化抽取。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "document understanding",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.22100v1",
+      "source": "arxiv",
+      "title": "MPDocBench-Parse: Benchmarking Practical Multi-page Document Parsing",
+      "abstract": "Document parsing converts visually rich documents into machine-readable structured representations, forming a crucial foundation for information systems. Although many benchmarks have been proposed for document parsing, they remain inadequate for realistic scenarios. Existing benchmarks either focus on specific tasks or assess only single-page, text-centric settings, making them insufficient for practical multi-page parsing. Moreover, they lack fine-grained evaluation of semantic continuity, hierarchical structure recovery, and visual content preservation. To address these gaps, we propose MPDocBench-Parse, a benchmark for multi-page document parsing in real-world applications. It contains 433 manually annotated documents with 3,246 pages, covering 15 document types in English and Chinese, with diverse layout styles, and supports document-level end-to-end evaluation. We further design a comprehensive protocol for content fidelity and logical structure, covering text, table, and formula recognition, truncated text and table merging, figure extraction, reading order, and heading hierarchy recovery. Experiments show that, while existing models perform well on basic text extraction, they still suffer clear limitations in semantic continuity integration, visual content parsing, and hierarchical structure recovery. MPDocBench-Parse provides a unified foundation for advancing document parsing toward more realistic scenarios.",
+      "authors": [
+        "Bangbang Zhou",
+        "Hangdi Xing",
+        "Yifan Chen",
+        "Jianjun Xu",
+        "Qi Zheng",
+        "Feiyu Gao",
+        "Zhibo Yang",
+        "Shuai Bai",
+        "Ming Yan",
+        "Jieping Ye",
+        "Hongtao Xie"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-05-21T07:36:41+00:00",
+      "link": "https://arxiv.org/pdf/2605.22100v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "multi-page document parsing benchmark covering diverse real-world documents",
+      "llm_evidence_cn": "多页面文档解析基准，覆盖多种真实文档类型",
+      "llm_evidence": "多页面文档解析基准，覆盖多种真实文档类型",
+      "canonical_evidence": "多页面文档解析基准，覆盖多种真实文档类型",
+      "llm_tldr_en": "MPDocBench-Parse provides a comprehensive benchmark for multi-page document parsing with 433 documents and 3246 pages across 15 domains, evaluating semantic continuity and hierarchy recovery.",
+      "llm_tldr_cn": "针对现有文档解析基准局限于单页或特定任务的问题，提出MPDocBench-Parse，包含433份多页文档共3246页，覆盖15个领域，细粒度评估语义连续性、层级结构恢复和视觉内容保留，为实际文档解析提供评测标准。",
+      "llm_tldr": "针对现有文档解析基准局限于单页或特定任务的问题，提出MPDocBench-Parse，包含433份多页文档共3246页，覆盖15个领域，细粒度评估语义连续性、层级结构恢复和视觉内容保留，为实际文档解析提供评测标准。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "OCR-free document parsing",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.22413v1",
+      "source": "arxiv",
+      "title": "From Recognition to Reasoning: Benchmarking and Enhancing MLLMs on Real-World Receipt Document Understanding",
+      "abstract": "Extracting structured information from visual documents (Visual Information Extraction, VIE) is a cornerstone of business automation. While recent Multimodal Large Language Models (MLLMs) have shown promising capabilities, existing benchmarks suffer from critical limitations in scale and realism, lack semantic granularity, and fail to cover diverse document types. To bridge this gap, we introduce ReceiptBench, a large-scale, human-annotated benchmark consisting of 10k diverse receipts, organizing information extraction into four hierarchical sub-tasks: (1) Basic Perception for raw text spotting, (2) Format Normalization for strictly following standardization instructions, (3) Semantic Reasoning for inferring implicit attributes from context, and (4) Structure Parsing for handling nested line items. Furthermore, we propose a two-stage training framework incorporating Metric-Aware Group Relative Policy Optimization (GRPO), which translates rigorous evaluation constraints into reinforcement learning signals to enhance structural consistency. Extensive experiments demonstrate that our method yields state-of-the-art performance, surpassing leading proprietary models on complex reasoning tasks. We release our datasets and code at https://github.com/wwwT0ri/ReceiptBench.",
+      "authors": [
+        "Yandi Wang",
+        "Libin Zhan",
+        "Ziwei Huang",
+        "Tiancheng Luo",
+        "Yuxuan Jiang",
+        "Wang Dong",
+        "Leilei Gan",
+        "Jun Chen"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-21T12:37:03+00:00",
+      "link": "https://arxiv.org/pdf/2605.22413v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "MLLM-based receipt document understanding and OCR-free extraction",
+      "llm_evidence_cn": "基于多模态大语言模型的收据文档理解与无OCR提取",
+      "llm_evidence": "基于多模态大语言模型的收据文档理解与无OCR提取",
+      "canonical_evidence": "基于多模态大语言模型的收据文档理解与无OCR提取",
+      "llm_tldr_en": "ReceiptBench benchmarks MLLMs on 10k diverse receipts across four hierarchical sub-tasks, from text spotting to semantic reasoning, and proposes enhancements that improve structured extraction.",
+      "llm_tldr_cn": "针对现有视觉文档信息提取基准在规模和真实性上的不足，该论文构建了含1万张多样化收据的ReceiptBench基准，将信息抽取细分为基本感知、格式规范化、语义推理等四个层次子任务，系统评估了多模态大语言模型的能力与局限，并提出了增强方法，提升了实际收据上结构化信息抽取的性能，为文档理解研究和应用提供了重要资源。",
+      "llm_tldr": "针对现有视觉文档信息提取基准在规模和真实性上的不足，该论文构建了含1万张多样化收据的ReceiptBench基准，将信息抽取细分为基本感知、格式规范化、语义推理等四个层次子任务，系统评估了多模态大语言模型的能力与局限，并提出了增强方法，提升了实际收据上结构化信息抽取的性能，为文档理解研究和应用提供了重要资源。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "Find papers on OCR free document understanding with multimodal large language models.",
+      "matched_requirement_id": "req-10",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.25781v1",
+      "source": "arxiv",
+      "title": "Double Triangle Annotation: A Scalable Human-in-the-Loop Framework for High-Precision Historical Document Annotation",
+      "abstract": "Evaluating structured-information extraction from historical documents at scale requires high-precision ground-truth annotations, yet traditional manual labeling is expensive and fully automated pipelines built on large language models are prone to hallucination. We propose Double Triangle Annotation, a two-layer human-in-the-loop framework that leverages cross-model consensus to automate the majority of annotation work while ensuring high-precision outputs. In the first layer, two architecturally independent Multimodal Large Language Models annotate each document in parallel; when they agree, the label is auto-accepted, and disagreements are routed to a human jury. A second layer cross-checks two such systems against each other, escalating residual conflicts to a domain expert. The framework rests on a single assumption -- error independence between models -- requires no distributional priors or task-specific calibration, and becomes more autonomous as model capability improves. On the Guides Rosenwald, a corpus of French medical directories spanning 1887-1906, the framework achieves a final Word Error Rate of 0.003. Applied at scale, model consensus auto-accepts over 85% of 13,595 fields. We release the resulting benchmark -- the first structured-extraction ground truth for the Rosenwald Guides -- to support future work on historical document processing.",
+      "authors": [
+        "Yi Ren"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-05-25T12:29:30+00:00",
+      "link": "https://arxiv.org/pdf/2605.25781v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "multimodal LLM-based annotation for structured document extraction with high precision",
+      "llm_evidence_cn": "基于多模态大语言模型的高精度结构化文档标注",
+      "llm_evidence": "基于多模态大语言模型的高精度结构化文档标注",
+      "canonical_evidence": "基于多模态大语言模型的高精度结构化文档标注",
+      "llm_tldr_en": "Double Triangle Annotation uses two MLLMs in parallel with human-in-the-loop to automatically annotate historical documents for structured information extraction.",
+      "llm_tldr_cn": "面向历史文档结构化信息提取的标注难题，该论文提出双三角形标注框架，利用两个独立的多模态大语言模型并行标注，一致则自动接受，分歧交由人工裁决。第二层交叉校验进一步提升精度。该方法以少量人工投入实现接近全自动的高精度标注，为文档理解提供高质量训练数据。",
+      "llm_tldr": "面向历史文档结构化信息提取的标注难题，该论文提出双三角形标注框架，利用两个独立的多模态大语言模型并行标注，一致则自动接受，分歧交由人工裁决。第二层交叉校验进一步提升精度。该方法以少量人工投入实现接近全自动的高精度标注，为文档理解提供高质量训练数据。",
+      "llm_tags": [
+        "query:du:composite"
+      ],
+      "matched_query_tag": "query:du:composite",
+      "matched_query_text": "Papers central to 用于查找与多模态文档理解、OCR-free 文档解析、视觉文本定位、坐标监督生成、版面感知建模、文档结构化抽取相关的论文，重点关注视觉语言模型在票据、证件、表单、合同等复杂文档图像上的文本识别、空间定位和结构化生成能力。, especially work that connects or combines: coordinate-supervised generation; layout-aware representation; visual grounding; OCR-free document parsing; multimodal large language model; document understanding; Find papers on coordinate supervised text generation for structured document extraction.; Find papers on layout aware vision language pretraining for document parsing.; Find papers on visual grounding and bounding box prediction in document images.; Find papers on OCR free document understanding with multimodal large language models..",
+      "matched_requirement_id": "req-composite-du",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.18160v1",
+      "source": "arxiv",
+      "title": "Vision Inference Former: Sustaining Visual Consistency in Multimodal Large Language Models",
+      "abstract": "In recent years, multimodal large language models (MLLMs) have achieved remarkable progress, primarily attributed to effective paradigms for integrating visual and textual information. The dominant connector-based paradigm projects visual features into textual sequence, enabling unified multimodal alignment and reasoning within a generative architecture. However, our experiments reveal two key limitations: (1) Although visual information serves as the core evidential modality in MLLMs, it is treated on par with textual tokens, diminishing the unique contribution of the visual modality; (2) As generation length increases, particularly within a limited context window, the model's dependence on visual information progressively weakens, resulting in deteriorated vision-language alignment and reduced consistency between generated content and visual semantics. To address these challenges, we propose the Vision Inference Former (VIF), a lightweight architectural module that establishes a direct bridge between pure visual representations and the model's output space. Specifically, VIF continuously injects visual semantics throughout the decoding phase of the inference process, ensuring that the model remains firmly grounded in visual content during generation. We conduct experiments on 14 benchmark tasks covering general reasoning, OCR, table understanding, vision-centric evaluation, and hallucination. Experimental results show that VIF consistently improves model performance across diverse architectures while introducing minimal additional overhead. The code for this work is available at https://github.com/Dong-Xinpeng/VIF.",
+      "authors": [
+        "Xinpeng Dong",
+        "Min Zhang",
+        "Kairong Han",
+        "Xu Tan",
+        "Fei Wu",
+        "Kun Kuang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-05-18T10:04:22+00:00",
+      "link": "https://arxiv.org/pdf/2605.18160v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "sustaining visual consistency in multimodal large language models",
+      "llm_evidence_cn": "在多模态大语言模型中维持视觉一致性",
+      "llm_evidence": "在多模态大语言模型中维持视觉一致性",
+      "canonical_evidence": "在多模态大语言模型中维持视觉一致性",
+      "llm_tldr_en": "Identifies visual information degradation in MLLMs with longer generation and proposes Vision Inference Former to sustain visual consistency.",
+      "llm_tldr_cn": "多模态大语言模型存在两个关键局限：视觉信息被等同对待而弱化其独特贡献，以及生成长度增加时对视觉依赖逐渐减弱。本文提出Vision Inference Former框架，通过改进视觉推理路径来维持视觉一致性。实验表明该方法在长文本生成中有效保持了视觉证据的利用，提升了回答准确性。",
+      "llm_tldr": "多模态大语言模型存在两个关键局限：视觉信息被等同对待而弱化其独特贡献，以及生成长度增加时对视觉依赖逐渐减弱。本文提出Vision Inference Former框架，通过改进视觉推理路径来维持视觉一致性。实验表明该方法在长文本生成中有效保持了视觉证据的利用，提升了回答准确性。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "multimodal large language model",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.19309v1",
+      "source": "arxiv",
+      "title": "How Do Document Parsers Break? Auditing Structural Vulnerability in Document Intelligence",
+      "abstract": "Document Layout Analysis (DLA) pipelines provide structured page representations for retrieval-augmented generation, long-document question answering, and other document intelligence systems, yet their robustness evaluation remains largely area-centric. We identify this Footprint Bias and propose a lightweight output-level auditing framework that decouples probe construction, policy-driven targeting, and structure-aware diagnosis. The framework combines Block-level Structural Loss Rate (B-SLR), granularity-aware exposure descriptors, and pathway attribution to analyze where perturbations interact with layout structure and how failures propagate. Across MinerU and PP-StructureV3 on 1,000 pages, affected area weakly tracks perturbation-induced OCR instability (R^2=0.384/0.110), whereas B-SLR aligns much more closely with it (R^2=0.727/0.916). Exposure descriptors further separate occlusion- and topology-dominant pathways, and small structurally targeted probes cause downstream QA/retrieval degradation comparable to larger-footprint perturbations. These results shift DLA robustness evaluation from footprint-based stress testing toward structure-aware vulnerability auditing.",
+      "authors": [
+        "Yue Chen",
+        "Yihao Wang",
+        "Ziyi Tang",
+        "Keze Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-05-19T03:44:09+00:00",
+      "link": "https://arxiv.org/pdf/2605.19309v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "auditing structural vulnerability in document layout analysis pipelines",
+      "llm_evidence_cn": "审计文档版面分析管道的结构脆弱性",
+      "llm_evidence": "审计文档版面分析管道的结构脆弱性",
+      "canonical_evidence": "审计文档版面分析管道的结构脆弱性",
+      "llm_tldr_en": "Identifies Footprint Bias in document layout analysis robustness evaluation and proposes an output-level auditing framework combining B-SLR and pathway attribution to diagnose failures in MinerU and PP-StructureV3.",
+      "llm_tldr_cn": "针对文档版面分析鲁棒性评估中的足迹偏差问题，提出一种轻量级输出级审计框架，结合块级结构损失率和路径归因方法，对MinerU和PP-StructureV3等解析器进行结构脆弱性诊断，揭示了扰动与版面结构的交互机制。",
+      "llm_tldr": "针对文档版面分析鲁棒性评估中的足迹偏差问题，提出一种轻量级输出级审计框架，结合块级结构损失率和路径归因方法，对MinerU和PP-StructureV3等解析器进行结构脆弱性诊断，揭示了扰动与版面结构的交互机制。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "layout-aware representation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2605.22422v1",
+      "source": "arxiv",
+      "title": "FastTab: A Fast Table Recognizer with a Tiny Recursive Module and 1D Transformers",
+      "abstract": "Table structure recognition (TSR) requires both table-level coherence (row/column counts, headers, spanning cells) and precise separator localization. We introduce FastTab, a grid-centric TSR model that avoids autoregressive HTML decoding by combining (i) a lightweight Tiny Recursive Module (TRM) for global reasoning and (ii) axial 1D Transformer encoders that capture long-range dependencies along rows and columns. The model predicts row/column counts, header rows, and separators to construct a grid, then infers rowspan/colspan using ROI-aligned cell features. Across four benchmarks (PubTabNet, FinTabNet, PubTables-1M, and SciTSR), FastTab achieves competitive structure recovery performance while operating at low-latency inference. We further study robustness under pixel-level anonymisation and show an extension to curved separators for camera-captured documents. The source code will be made publicly available at https://github.com/hamdilaziz/FastTab .",
+      "authors": [
+        "Laziz Hamdi",
+        "Amine Tamasna",
+        "Pascal Boisson",
+        "Thierry Paquet"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-05-21T12:42:58+00:00",
+      "link": "https://arxiv.org/pdf/2605.22422v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "layout-aware table recognition using 1D Transformers and grid construction",
+      "llm_evidence_cn": "利用一维Transformer和网格构建进行布局感知的表格识别",
+      "llm_evidence": "利用一维Transformer和网格构建进行布局感知的表格识别",
+      "canonical_evidence": "利用一维Transformer和网格构建进行布局感知的表格识别",
+      "llm_tldr_en": "FastTab introduces a grid-centric TSR model with a Tiny Recursive Module and axial 1D Transformers to capture layout dependencies, achieving fast and accurate table structure recovery.",
+      "llm_tldr_cn": "针对表格结构识别任务，该论文提出FastTab模型，采用轻量级递归模块和轴向一维Transformer编码器来捕捉行列长程依赖，通过预测行列计数和分隔符构建网格，并利用ROI对齐的单元格特征推断跨行/列。在四个基准上，FastTab以低延迟实现了具有竞争力的结构恢复性能。",
+      "llm_tldr": "针对表格结构识别任务，该论文提出FastTab模型，采用轻量级递归模块和轴向一维Transformer编码器来捕捉行列长程依赖，通过预测行列计数和分隔符构建网格，并利用ROI对齐的单元格特征推断跨行/列。在四个基准上，FastTab以低延迟实现了具有竞争力的结构恢复性能。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "layout-aware representation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.18173v1",
+      "source": "arxiv",
+      "title": "Do You Need Text Rectification? Soft Attention Mask Embedding for Rectification-Free Scene Text Spotting",
+      "abstract": "End-to-end scene text spotting, which unifies text detection and recognition within a single framework, has witnessed remarkable progress driven by deep learning advances. However, most existing approaches still suffer from incomplete mask proposals caused by multi-scale variation, arbitrary text shapes, and complex background interference, thereby degrading recognition accuracy. In this paper, we propose a novel Soft Attention Mask Embedding module (SAME) that leverages the global receptive field of Transformer encoders to encode high-level features and compute soft attention weights, which are then hierarchically embedded with predicted masks to generate refined text-boundary-aware masks that effectively suppress background noise. Building upon this module, we present SAME-Net, a robust end-to-end text spotting framework that requires neither character-level annotations nor auxiliary text rectification modules. Since the soft attention mechanism is fully differentiable, recognition loss gradients can be back-propagated through the SAME module to the detection branch, enabling joint optimization of detection and recognition objectives. Extensive experiments on challenging benchmarks demonstrate the effectiveness of our approach: SAME-Net achieves 84.02\\% end-to-end H-mean on the arbitrarily-shaped Total-Text dataset, surpassing the previous state-of-the-art GLASS by 1.02\\% in full-lexicon accuracy without additional training data, and obtains competitive 83.4\\% strong-lexicon results on the multi-oriented ICDAR 2015 dataset.",
+      "authors": [
+        "Antonio Colombo",
+        "Giovanni Bianchi"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-18T10:15:57+00:00",
+      "link": "https://arxiv.org/pdf/2605.18173v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "bounding box refinement for text spotting",
+      "llm_evidence_cn": "文本检测中的边界框细化",
+      "llm_evidence": "文本检测中的边界框细化",
+      "canonical_evidence": "文本检测中的边界框细化",
+      "llm_tldr_en": "Proposes Soft Attention Mask Embedding for rectification-free scene text spotting with improved mask accuracy.",
+      "llm_tldr_cn": "端到端场景文本检测识别方法受限于不完整的掩码提议。本文提出软注意力掩码嵌入模块（SAME），利用Transformer编码器的全局感受野编码高层特征，计算软注意力权重，并与预测掩码层次化嵌入以生成精细的文本边界感知掩码。该方法无需文本校正，提升检测和识别精度。虽用于自然场景，但掩码细化技术可直接迁移至文档图像中的边界框预测。",
+      "llm_tldr": "端到端场景文本检测识别方法受限于不完整的掩码提议。本文提出软注意力掩码嵌入模块（SAME），利用Transformer编码器的全局感受野编码高层特征，计算软注意力权重，并与预测掩码层次化嵌入以生成精细的文本边界感知掩码。该方法无需文本校正，提升检测和识别精度。虽用于自然场景，但掩码细化技术可直接迁移至文档图像中的边界框预测。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "Find papers on visual grounding and bounding box prediction in document images.",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.17727v1",
+      "source": "arxiv",
+      "title": "GraSP-VL: Length as a Semantic Granularity Interface for Vision-Language Representations",
+      "abstract": "Frozen vision-language embeddings contain signals at multiple semantic resolutions, from object identity to attributes, relations, and full-caption meaning, but they expose these signals through a fixed-length vector interface. We study whether embedding length can be turned into a controllable semantic access interface. We propose \\textbf{GraSP-VL}, which learns a shared near-orthogonal prefix transform over frozen VLM embeddings. GraSP-VL instantiates a \\textbf{Semantic Matryoshka} interface: short prefixes are assigned coarse semantic roles, while longer prefixes progressively expose finer language-grounded distinctions. Because the transform is shared across image and text embeddings and preserves full-dimensional geometry, prefix behavior changes without rewriting the original VLM space. On a 20,147-example COCO/Flickr30K annotation pool, GraSP-VL reaches a staircase score of 53.01 and hard-negative selectivity of 89.76, while keeping full-space drift below $10^{-6}$. It also transfers to SugarCrepe-clean with 86.03 object accuracy and 11.96 mean external emergence, and preserves full-dimensional zero-shot CIFAR-100 accuracy. These results show that frozen VLM embeddings can be reorganized into a truncatable semantic prefix interface rather than merely compressed.",
+      "authors": [
+        "Zesheng Li",
+        "Chengchang Pan",
+        "Honggang Qi"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-18T01:10:07+00:00",
+      "link": "https://arxiv.org/pdf/2605.17727v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "controllable semantic granularity interface for VLMs",
+      "llm_evidence_cn": "用于视觉语言模型的可控语义粒度接口",
+      "llm_evidence": "用于视觉语言模型的可控语义粒度接口",
+      "canonical_evidence": "用于视觉语言模型的可控语义粒度接口",
+      "llm_tldr_en": "GraSP-VL learns a shared near-orthogonal prefix transform over frozen VLM embeddings to control semantic granularity via embedding length.",
+      "llm_tldr_cn": "现有的视觉语言嵌入将多语义分辨率信号压缩为固定长度向量，难以按需访问不同粒度信息。本文提出GraSP-VL，通过对冻结VLM嵌入学习共享的近正交前缀变换，实现基于嵌入长度的可控语义粒度接口。短前缀对应粗粒度语义，长前缀暴露细粒度区别。该方法在保持全维度几何的同时，提供了灵活的语义访问方式。",
+      "llm_tldr": "现有的视觉语言嵌入将多语义分辨率信号压缩为固定长度向量，难以按需访问不同粒度信息。本文提出GraSP-VL，通过对冻结VLM嵌入学习共享的近正交前缀变换，实现基于嵌入长度的可控语义粒度接口。短前缀对应粗粒度语义，长前缀暴露细粒度区别。该方法在保持全维度几何的同时，提供了灵活的语义访问方式。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "multimodal large language model",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.24973v1",
+      "source": "arxiv",
+      "title": "MinerU-Popo: Universal Post-Processing Model for Structured Document Parsing",
+      "abstract": "VLM-based OCR models have become the de facto choice for document parsing, as they can accurately extract page-level elements (e.g., paragraphs within individual pages) together with their bounding boxes and textual content. However, downstream applications such as RAG require coherent document-level information, whereas these models often break cross-page continuity and fail to recover disrupted structures, such as paragraphs and tables truncated by page boundaries. Such relationships are not confined to a single page; instead, they require joint analysis of titles, paragraphs, tables, and images spanning multiple pages. A natural solution is therefore to reuse existing OCR outputs and reconstruct document-level logical structures through post-processing.   To this end, we propose MinerU-Popo, a lightweight and universal framework for POst-Processing OCR outputs, which converts page-level results from diverse parsers into coherent document-level structures. MinerU-Popo decomposes the problem into four focused subtasks: text truncation recovery, table truncation recovery, title hierarchy reconstruction, and image-text association. To address these effectively, we build a task-oriented data engine with task-specific input filtering, and use the generated data (30K) to fine-tune a lightweight post-processing model (Qwen3-VL-4B). To support long documents, we introduce dynamic chunking with overlap-based synchronization, which aligns chunk-level outputs from the fine-tuned model and preserves global consistency. Finally, we assemble the aligned outputs into a tree-structured document representation, further enriched with node chunking and summaries for downstream retrieval and analysis. Empirical results show MinerU-Popo improves title-hierarchy TEDS by at least 20% across all five tested OCR models, improves RAG accuracy and reduces per-query latency.",
+      "authors": [
+        "Bangrui Xu",
+        "Ziyang Miao",
+        "Xuanhe Zhou",
+        "Yiming Lin",
+        "Zirui Tang",
+        "Xiaomeng Zhao",
+        "Fan Wu",
+        "Cheng Tan",
+        "Fan Wu",
+        "Bin Wang",
+        "Conghui He"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-05-24T10:00:28+00:00",
+      "link": "https://arxiv.org/pdf/2605.24973v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "structured document parsing with bounding boxes and layout reconstruction",
+      "llm_evidence_cn": "结构化文档解析，包括边界框和版面重构",
+      "llm_evidence": "结构化文档解析，包括边界框和版面重构",
+      "canonical_evidence": "结构化文档解析，包括边界框和版面重构",
+      "llm_tldr_en": "MinerU-Popo addresses the cross-page continuity problem in VLM-based OCR by proposing a universal post-processing model that reconstructs document-level logical structures like paragraphs and tables.",
+      "llm_tldr_cn": "针对VLM-based OCR模型在跨页连续性和结构恢复上的不足，MinerU-Popo提出一种通用后处理模型，重用现有OCR输出，通过后处理重构文档级逻辑结构，有效恢复被跨页截断的段落和表格，显著提升结构化文档解析的连贯性，对RAG等下游应用具有重要价值。",
+      "llm_tldr": "针对VLM-based OCR模型在跨页连续性和结构恢复上的不足，MinerU-Popo提出一种通用后处理模型，重用现有OCR输出，通过后处理重构文档级逻辑结构，有效恢复被跨页截断的段落和表格，显著提升结构化文档解析的连贯性，对RAG等下游应用具有重要价值。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "Find papers on layout aware vision language pretraining for document parsing.",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.19410v1",
+      "source": "arxiv",
+      "title": "Vision Harnessing Agent for Open Ad-hoc Segmentation",
+      "abstract": "Segmentation has become easy when the concept is known, requiring retrieval of a learned visual grounding from text. It remains hard for open ad-hoc concepts, where the grounding may not exist as one learned mask and must often be constructed from image evidence through parts, relations, exclusions, and collections. We propose a Vision-guided Ad-hoc Segmentation Agent (VASA), the first vision harnessing agent for open ad-hoc segmentation. VASA is training-free and couples a VLM agent, a segmentation foundation model, and a visually grounded workflow. Rather than revising text prompts alone, VASA uses a persistent working mask to reason, construct, and validate a solution. It plans visual operations, invokes segmentation tools, inspects results, edits the mask, and recovers from errors. We construct PARS, a new benchmark that turns part-level labels in PartImageNet into open ad-hoc concepts through long-form definition queries. On PARS, VASA outperforms open-vocabulary, reasoning-based, and agentic baselines, surpassing SAM3 Agent by 14-25%. On RefCOCOm, a standard multi-granularity referring segmentation benchmark, VASA improves over SAM3 Agent by 5-9% and over other agentic baselines by up to 20%. These results validate agentic visual construction for open ad-hoc segmentation. Our work points to a path for AI agents beyond wrapping foundation models as tools: Programming them with task knowledge, VLM behavior, visual routines, working memory, and failure-aware workflows.",
+      "authors": [
+        "Zilin Wang",
+        "Stella X. Yu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-19T06:04:23+00:00",
+      "link": "https://arxiv.org/pdf/2605.19410v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "VLM agent with visual grounding for open ad-hoc segmentation",
+      "llm_evidence_cn": "利用VLM智能体进行视觉定位的开放即兴分割",
+      "llm_evidence": "利用VLM智能体进行视觉定位的开放即兴分割",
+      "canonical_evidence": "利用VLM智能体进行视觉定位的开放即兴分割",
+      "llm_tldr_en": "VASA is a training-free VLM agent that couples visual grounding with a segmentation model to segment open ad-hoc concepts via iterative mask refinement.",
+      "llm_tldr_cn": "针对开放即兴概念分割中缺乏预定义定位掩模的问题，提出VASA，一个无需训练的精简智能体，结合VLM、分割基础模型和视觉定位工作流，通过逐步推理和掩模编辑完成复杂分割。",
+      "llm_tldr": "针对开放即兴概念分割中缺乏预定义定位掩模的问题，提出VASA，一个无需训练的精简智能体，结合VLM、分割基础模型和视觉定位工作流，通过逐步推理和掩模编辑完成复杂分割。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.18359v1",
+      "source": "arxiv",
+      "title": "RAVE: Re-Allocating Visual Attention in Large Multimodal Models",
+      "abstract": "Large multimodal models (LMMs) inherit the self-attention mechanism of pretrained language backbones, yet standard attention can exhibit suboptimal allocation, including cross-modal misallocation between textual and visual evidence and intra-visual imbalance among visual tokens. We propose RAVE (Re-Allocating Visual Attention), a lightweight pair-gating mechanism that adds a learned query--key bias to pre-softmax attention scores over visual keys, derived from pre-RoPE query and key features. RAVE requires no architectural modification to the backbone and can be trained end-to-end with the rest of the model. Across a suite of multimodal benchmarks, RAVE improves over standard attention by an average of 3 points, with the largest gains on perception-intensive tasks -- including multilingual OCR, chart understanding, document VQA, and scene text VQA -- where accurate visual grounding is critical.",
+      "authors": [
+        "Xi Leng",
+        "Xinhong Ma",
+        "Ziqiang Dong",
+        "Feng Zhang",
+        "Xiaoying Tang",
+        "Yang Yang",
+        "Guanjun Jiang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-18T13:12:50+00:00",
+      "link": "https://arxiv.org/pdf/2605.18359v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "improving attention in large multimodal models",
+      "llm_evidence_cn": "改进多模态大模型的注意力机制",
+      "llm_evidence": "改进多模态大模型的注意力机制",
+      "canonical_evidence": "改进多模态大模型的注意力机制",
+      "llm_tldr_en": "RAVE re-allocates visual attention in LMMs via learned query-key biases, boosting multimodal benchmarks by 3 points.",
+      "llm_tldr_cn": "大型多模态模型（LMM）中标准注意力存在跨模态分配不均的问题。本文提出RAVE，一种轻量级成对门控机制，通过向softmax前的注意力分数添加学习的查询-键偏置来重新分配视觉注意力。该方法无需修改骨干架构，可端到端训练。在多个多模态基准上，RAVE平均提升3个点，尤其在感知密集型任务上增益最大。这项工作为改进LMM的视觉注意提供了通用且有效的方法。",
+      "llm_tldr": "大型多模态模型（LMM）中标准注意力存在跨模态分配不均的问题。本文提出RAVE，一种轻量级成对门控机制，通过向softmax前的注意力分数添加学习的查询-键偏置来重新分配视觉注意力。该方法无需修改骨干架构，可端到端训练。在多个多模态基准上，RAVE平均提升3个点，尤其在感知密集型任务上增益最大。这项工作为改进LMM的视觉注意提供了通用且有效的方法。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "multimodal large language model",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.20676v1",
+      "source": "arxiv",
+      "title": "VISTAQA: Benchmarking Joint Visual Question Answering and Pixel-Level Evidence",
+      "abstract": "Establishing a clear link between model predictions and the visual evidence that supports them is critical for transparency and reliability in multimodal reasoning, yet current multimodal large language model (MLLM) evaluations do not explicitly enforce this alignment. Existing benchmarks assess either textual answer correctness or pixel-level localization in isolation, leaving the coupling of reasoning and grounding an open challenge. We introduce VISTAQA, a comprehensive benchmark for joint evaluation of free-form answer correctness and pixel-level evidence grounding in visual question answering. VISTAQA comprises 1,157 expert-curated samples spanning six task types and six visual domains, ranging from direct perception to compositional and relational reasoning. VISTAQA requires models to not only answer correctly, but to also provide precise segmentation masks that support their answers. It also includes hallucination-aware examples where no valid visual evidence exists. To support this enhanced evaluation, we introduce GROVE, a unified evaluation metric that enforces joint correctness by combining textual accuracy and grounding quality via a per-sample geometric mean, ensuring neither dimension can compensate for deficiencies in the other. Comprehensive experiments across grounding-aware models and hybrid pipelines with general-purpose MLLMs reveal that even the strongest systems achieve limited performance under GROVE, highlighting a substantial gap between answer accuracy and visual evidence alignment.",
+      "authors": [
+        "Mozhgan Nasr Azadani",
+        "Yimu Wang",
+        "Yongpeng Zhu",
+        "Lihong Chen",
+        "Milan Ganai",
+        "Sean Sedwards",
+        "Marco Pavone",
+        "Krzysztof Czarnecki"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-20T03:44:06+00:00",
+      "link": "https://arxiv.org/pdf/2605.20676v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "joint evaluation of visual grounding and VQA",
+      "llm_evidence_cn": "联合评估视觉定位和视觉问答",
+      "llm_evidence": "联合评估视觉定位和视觉问答",
+      "canonical_evidence": "联合评估视觉定位和视觉问答",
+      "llm_tldr_en": "VISTAQA benchmark jointly evaluates free-form answer correctness and pixel-level evidence grounding for MLLMs.",
+      "llm_tldr_cn": "现有多模态大模型评估分别考察文本答案或像素级定位，缺乏对推理与定位耦合的检验。本文提出VISTAQA基准，包含1157个专家标注样本，覆盖六种任务类型和六种视觉领域，联合评估自由形式答案正确性和像素级证据定位。该基准为视觉定位与推理的对齐提供了全面评估工具，可应用于文档理解中的定位任务。",
+      "llm_tldr": "现有多模态大模型评估分别考察文本答案或像素级定位，缺乏对推理与定位耦合的检验。本文提出VISTAQA基准，包含1157个专家标注样本，覆盖六种任务类型和六种视觉领域，联合评估自由形式答案正确性和像素级证据定位。该基准为视觉定位与推理的对齐提供了全面评估工具，可应用于文档理解中的定位任务。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.18434v1",
+      "source": "arxiv",
+      "title": "TIGER-FG: Text-Guided Implicit Fine-Grained Grounding for E-commerce Retrieval",
+      "abstract": "E-commerce image search often takes a cropped image as the query, while each candidate is represented by full item images and structured text. This image-to-multimodal retrieval setting presents two asymmetries: a modality disparity -- a visual query must match image--text items, and a granularity disparity -- a cropped query must be compared with full images containing background context and possible distractors. Detection-based pipelines handle the granularity disparity through explicit localization but incur extra cost and error propagation, whereas CLIP-style encoders avoid detection, but are vulnerable to backgrounds or irrelevant items. To address these limitations, we propose TIGER-FG, a text-guided implicit fine-grained grounding framework for image-to-multimodal e-commerce retrieval. TIGER-FG uses item text as semantic guidance to produce target-focused item representations without object detection for retrieval. We further introduce dual distillation objectives that preserve target-region spatial consistency and query--item similarity structure, yielding more stable and discriminative multimodal representations. In addition, we construct ECom-RF-IMMR, a realistic benchmark suite with a 10M-pair training set and two evaluation benchmarks covering standard and cluttered item layouts. TIGER-FG improves Recall@1 over the strongest baseline by 6.1 and 34.4 percentage points on the two evaluation benchmarks, respectively, with only 85.7M query-side parameters and 256-dim embeddings. Results on public e-commerce benchmarks further demonstrate its generalization to noisy and one-to-many retrieval scenarios. Code and data will be released.",
+      "authors": [
+        "Xinyu Sun",
+        "Huangyu Dai",
+        "Lingtao Mao",
+        "Zexin Zheng",
+        "Zihan Liang",
+        "Ben Chen",
+        "Chenyi Lei",
+        "Wenwu Ou"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR",
+        "cs.CV"
+      ],
+      "published": "2026-05-18T14:07:20+00:00",
+      "link": "https://arxiv.org/pdf/2605.18434v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "text-guided implicit fine-grained grounding for e-commerce retrieval",
+      "llm_evidence_cn": "文本引导的隐式细粒度定位用于电商检索",
+      "llm_evidence": "文本引导的隐式细粒度定位用于电商检索",
+      "canonical_evidence": "文本引导的隐式细粒度定位用于电商检索",
+      "llm_tldr_en": "Proposes TIGER-FG, a text-guided implicit fine-grained grounding framework for e-commerce image retrieval, addressing modality and granularity disparities without explicit detection.",
+      "llm_tldr_cn": "针对电商图像检索中的模态和粒度不匹配问题，提出TIGER-FG框架，利用文本引导的隐式细粒度定位方法，无需显式检测即可实现精准的图像-文本匹配，在多个数据集上取得优异效果，为视觉定位方法提供了新思路。",
+      "llm_tldr": "针对电商图像检索中的模态和粒度不匹配问题，提出TIGER-FG框架，利用文本引导的隐式细粒度定位方法，无需显式检测即可实现精准的图像-文本匹配，在多个数据集上取得优异效果，为视觉定位方法提供了新思路。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.24530v1",
+      "source": "arxiv",
+      "title": "Unveil: Unified Visual-Textual Integration and Distillation for Multi-modal Document Retrieval",
+      "abstract": "Document retrieval in real-world scenarios faces significant challenges due to diverse document formats and modalities. Traditional text-based approaches rely on tailored parsing techniques that disregard layout information and are prone to errors, while recent parsing-free visual methods often struggle to capture fine-grained textual semantics in text-rich scenarios. To address these limitations, we propose \\textbf{Unveil}, a novel visual-textual embedding framework that effectively integrates textual and visual features for robust document representation. Through knowledge distillation, we transfer the semantic understanding capabilities from the visual-textual embedding model to a purely visual model, enabling efficient parsing-free retrieval while preserving semantic fidelity. Experimental results demonstrate that our visual-textual embedding method surpasses existing approaches, while knowledge distillation successfully bridges the performance gap between visual-textual and visual-only methods, improving both retrieval accuracy and efficiency.",
+      "authors": [
+        "Hao Sun",
+        "Yingyan Hou",
+        "Jiayan Guo",
+        "Bo Wang",
+        "Chunyu Yang",
+        "Jinsong Ni",
+        "Yan Zhang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "published": "2026-05-23T11:48:28+00:00",
+      "link": "https://arxiv.org/pdf/2605.24530v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "multi-modal document retrieval integrates visual and textual features",
+      "llm_evidence_cn": "多模态文档检索整合视觉与文本特征",
+      "llm_evidence": "多模态文档检索整合视觉与文本特征",
+      "canonical_evidence": "多模态文档检索整合视觉与文本特征",
+      "llm_tldr_en": "Proposes Unveil, a visual-textual embedding framework that integrates textual and visual features via distillation for robust document representation, enabling efficient parsing-free document retrieval.",
+      "llm_tldr_cn": "现有文档检索方法要么依赖特定解析而忽略布局且易出错，要么使用纯视觉方法但难以捕捉文本语义。本文提出Unveil，一种整合文本和视觉特征的嵌入框架，并通过知识蒸馏将视觉-文本模型的语义能力转移到纯视觉模型，从而实现高效且无需解析的文档检索。实验表明该方法在文本丰富的文档检索中表现优异，为多模态文档理解提供了新范式。",
+      "llm_tldr": "现有文档检索方法要么依赖特定解析而忽略布局且易出错，要么使用纯视觉方法但难以捕捉文本语义。本文提出Unveil，一种整合文本和视觉特征的嵌入框架，并通过知识蒸馏将视觉-文本模型的语义能力转移到纯视觉模型，从而实现高效且无需解析的文档检索。实验表明该方法在文本丰富的文档检索中表现优异，为多模态文档理解提供了新范式。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "document understanding",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.19528v1",
+      "source": "arxiv",
+      "title": "Towards Camera-Robust 3D Localization: Equation-Anchored Tool-Use for MLLMs",
+      "abstract": "3D localization in Multimodal Large Language Models (MLLMs), including 3D object detection and 3D visual grounding, is fundamentally limited by camera intrinsic ambiguity: the same image admits different 3D scenes under different cameras. Existing MLLMs either ignore camera parameters and overfit to a canonical training intrinsic, or retrieve depth and 3D cues from external tools but treat the returned values as reference cues (numerical hints that the model is free to interpret implicitly), both preventing camera information from being deterministically propagated into the prediction. We propose an equation-anchored tool-use framework that re-purposes spatial tools as formula variables. The proposed framework proactively retrieves camera intrinsics and samples multi-point metric depths, writes the pinhole back-projection equation $\\hat{X} = (u_c - c_x)\\bar{Z}/f_x$ explicitly in Chain-of-Thought (CoT), and substitutes tool outputs into the formula before regressing the final 9-DoF bounding box. On both 3D object detection and 3D visual grounding tasks under rescaled camera intrinsics from $0.5\\times$ to $1.5\\times$, our method outperforms RGB-only and tool-augmented baselines, with significant gains where the camera deviates most from the training scale. Code and data will be released.",
+      "authors": [
+        "Xueying Jiang",
+        "Wenhao Li",
+        "Quanhao Qian",
+        "Deli Zhao",
+        "Shijian Lu",
+        "Gongjie Zhang",
+        "Ran Xu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-19T08:30:21+00:00",
+      "link": "https://arxiv.org/pdf/2605.19528v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "3D visual grounding in MLLMs",
+      "llm_evidence_cn": "多模态大语言模型中的3D视觉定位",
+      "llm_evidence": "多模态大语言模型中的3D视觉定位",
+      "canonical_evidence": "多模态大语言模型中的3D视觉定位",
+      "llm_tldr_en": "Proposes equation-anchored tool-use for MLLMs to achieve camera-robust 3D localization by deterministically propagating camera parameters into predictions, improving 3D object detection and visual grounding.",
+      "llm_tldr_cn": "多模态大语言模型在3D定位中受限于相机内参模糊性，现有方法无法确定性地传播相机信息。本文提出方程锚定工具使用框架，将空间工具重利用为公式变量，主动获取相机参数并确定性地融入预测，实现了对相机鲁棒的3D物体检测和视觉定位，提升了定位精度和泛化能力。",
+      "llm_tldr": "多模态大语言模型在3D定位中受限于相机内参模糊性，现有方法无法确定性地传播相机信息。本文提出方程锚定工具使用框架，将空间工具重利用为公式变量，主动获取相机参数并确定性地融入预测，实现了对相机鲁棒的3D物体检测和视觉定位，提升了定位精度和泛化能力。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.20713v1",
+      "source": "arxiv",
+      "title": "SAVER: Selective As-Needed Vision Evidence for Multimodal Information Extraction",
+      "abstract": "Multimodal IE in social media is difficult because a post may attach multiple images that are weakly related, redundant, or even misleading with respect to the text. In this setting, always-on multimodal fusion wastes computation and can amplify spurious visual cues. The core challenge is to decide, for each candidate span or marked entity pair, whether vision should be consulted at all and, if so, which small subset of images provides trustworthy evidence.   We propose SAVER, a selective vision-as-needed framework for multimodal named entity recognition and multimodal relation extraction. SAVER uses a Conformal Groundability Gate (CGG) to estimate span-level visual groundability in MNER, derive pair-level activation in MRE from the two marked entities, and calibrate the activation threshold on a held-out split via a conformal-style procedure with Clopper--Pearson upper bounds. When activated, a submodular relevance--diversity selector chooses a compact evidence subset across images, which is then aggregated by a Set Transformer. An energy-inspired joint scoring head combines text, optional visual evidence, text--image consistency, and sparse routing for entity typing or relation classification.   Experiments show that SAVER consistently improves F1 over strong text-only and always-on multimodal baselines, while reducing AURC, increasing activation coverage at a fixed risk level, and lowering FLOPs and P90 latency.",
+      "authors": [
+        "Miaobo Hu",
+        "Shuhao Hu",
+        "Bokun Wang",
+        "Rui Chen",
+        "Xin Wang",
+        "Xiaobo Guo",
+        "Daren Zha",
+        "Jun Xiao"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-05-20T05:10:18+00:00",
+      "link": "https://arxiv.org/pdf/2605.20713v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "visual groundability estimation using Conformal Groundability Gate for selective vision evidence",
+      "llm_evidence_cn": "使用一致性可接地门控估计视觉可接地性，实现选择性视觉证据",
+      "llm_evidence": "使用一致性可接地门控估计视觉可接地性，实现选择性视觉证据",
+      "canonical_evidence": "使用一致性可接地门控估计视觉可接地性，实现选择性视觉证据",
+      "llm_tldr_en": "SAVER proposes a Conformal Groundability Gate to decide when and which images provide trustworthy visual evidence for multimodal information extraction.",
+      "llm_tldr_cn": "针对多模态信息抽取中视觉证据冗余或误导的问题，该论文提出SAVER框架，通过一致性可接地门控（CGG）在跨度级别估计视觉可接地性，仅在需要时选择性利用图片证据。在社交媒体NER和RE任务上取得良好效果，减少了计算浪费并提升鲁棒性。",
+      "llm_tldr": "针对多模态信息抽取中视觉证据冗余或误导的问题，该论文提出SAVER框架，通过一致性可接地门控（CGG）在跨度级别估计视觉可接地性，仅在需要时选择性利用图片证据。在社交媒体NER和RE任务上取得良好效果，减少了计算浪费并提升鲁棒性。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
