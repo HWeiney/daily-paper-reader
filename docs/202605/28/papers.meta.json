@@ -1,0 +1,69 @@
+{
+  "label": "2026-05-28",
+  "date": "2026-05-28",
+  "generated_at": "2026-05-28T21:45:02",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202605/28/2605.27365v2-locateanything-fast-and-high-quality-vision-language-grounding-with-parallel-box-decoding",
+      "section": "deep",
+      "title_en": "LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding",
+      "authors": "Shihao Wang, Shilong Liu, Yuanguo Kuang, Xinyu Wei, Yangzhou Liu, Zhiqi Li, Yunze Man, Guo Chen, Andrew Tao, Guilin Liu, Jan Kautz, Lei Zhang, Zhiding Yu",
+      "date": "2026-05-26",
+      "pdf": "https://arxiv.org/pdf/2605.27365v2",
+      "score": "9.0",
+      "evidence": "并行框解码用于视觉定位和边界框预测",
+      "tldr": "现有视觉-语言模型将边界框序列化为多个token独立解码，破坏了几何连贯性并造成推理瓶颈。本文提出LocateAnything，采用并行框解码（PBD）将几何元素作为原子单元单步解码，保持几何一致性并实现并行化。结合大规模数据集LocateAnything-Data（138M样本），在多个基准上显著提升解码吞吐量和定位精度。贡献在于实现了高效且精准的统一视觉定位与检测。",
+      "tags": "query:du",
+      "abstract_en": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded largely independently. This token-by-token decoding mismatches the coupled structure of box geometry and creates a practical inference bottleneck due to strictly sequential generation. We introduce LocateAnything, a unified generative grounding and detection framework based on Parallel Box Decoding (PBD). By decoding geometric elements such as bounding boxes and points as atomic units in a single step, LocateAnything preserves intra-box geometric coherence and unlocks substantial parallelism. We show that PBD improves both decoding throughput and localization accuracy. We further develop a scalable data engine and curate LocateAnything-Data, a large-scale dataset with more than 138 million training samples, substantially increasing data diversity for high-precision localization. Extensive evaluations show that LocateAnything advances the speed-accuracy frontier, achieving significantly higher decoding throughput while improving high-IoU localization quality across diverse benchmarks. The results highlight the complementary benefits of Parallel Box Decoding and large-scale training data in enabling efficient and precise unified visual grounding and detection.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/28/2605.27978v1-abot-ocr-technical-report",
+      "section": "deep",
+      "title_en": "ABot-OCR Technical Report",
+      "authors": "Kaitao Jiang, Ruiyan Gong, Xiaolong Cheng, Kangning Niu, Tianlun Li, Mu Xu",
+      "date": "2026-05-27",
+      "pdf": "https://arxiv.org/pdf/2605.27978v1",
+      "score": "9.0",
+      "evidence": "端到端视觉语言模型直接转写页面为Markdown，无需OCR",
+      "tldr": "传统文档解析依赖多模块流水线，流程脆弱且误差累积。ABot-OCR提出端到端视觉语言模型，将页面图像直接转录为干净Markdown，无需复杂编排。通过专用数据引擎提供大规模一致监督，并采用解耦异构文档优化（结构约束强化学习）强化文本准确性与标记格式正确性。在OmniDocBench v1.5/v1.6上以92.81和93.30分刷新端到端系统记录，大幅缩小与流水线方法的差距。跨十种语言的测试证实其强泛化能力，为文档解析提供简洁高效的统一方案。",
+      "tags": "query:du",
+      "abstract_en": "We introduce ABot-OCR, an end-to-end vision-language model that transcribes a page image directly into clean Markdown in a single forward pass. By doing so, our approach completely eliminates the need for brittle modular orchestration. To maximize parsing fidelity, we develop a dedicated data engine to provide large-scale, structurally consistent supervision. Furthermore, we propose Decoupled Heterogeneous Document Optimization, a structure-constrained reinforcement learning method that sharpens textual accuracy and strictly enforces markup well-formedness beyond supervised fine-tuning alone. Extensive evaluations demonstrate the superior performance of our framework. On the OmniDocBench v1.5 and v1.6 benchmarks, ABot-OCR achieves state-of-the-art scores of 92.81 and 93.30 among all end-to-end systems, substantially narrowing the performance gap relative to strong pipeline baselines. Finally, comprehensive multilingual text recognition across ten diverse languages further confirms the robust generalizability of ABot-OCR.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/28/2605.21090v1-textsculptor-training-and-benchmarking-scene-text-editing",
+      "section": "quick",
+      "title_en": "TextSculptor: Training and Benchmarking Scene Text Editing",
+      "authors": "Yiheng Lin, Siyu Jiao, Xiaohan Lan, Wei Zhou, Qi She, Fei Yu, Heyun Chen, Zhengwei Wang, Jinghuan Chen, Moran Li, Yingchen Yu, Zijian Feng, Yao Zhao, Yunchao Wei, Yujie Zhong",
+      "date": "2026-05-20",
+      "pdf": "https://arxiv.org/pdf/2605.21090v1",
+      "score": "6.0",
+      "evidence": "利用多模态大语言模型进行场景文本编辑",
+      "tldr": "场景文本编辑因训练数据稀缺和基准缺失而极具挑战。本文提出TextSculptor框架，包含自动化数据流水线，构建3.2M样本的大规模数据集TextSculpt-Data，涵盖文本增删替换等任务。同时推出TextSculpt-Bench基准，结合OCR与多模态评估文本质量与背景一致性。实验表明，该方法显著提升开源模型性能，缩小与闭源系统差距。",
+      "tags": "query:du",
+      "abstract_en": "Recent advances in Multimodal Large Language Models (MLLMs) and diffusion-based generative models have substantially improved prompt-driven image editing. However, scene text editing remains challenging, as it requires models to precisely modify textual content while preserving visual realism and non-target regions. Current open-source models still lag behind proprietary systems, largely due to the scarcity of high-quality training data and the lack of standardized benchmarks tailored to text editing. To address these challenges, we present TextSculptor, a comprehensive framework for data construction and evaluation of scene text editing. We first develop an automated data construction pipeline that combines text-aware image synthesis with programmatic text rendering and compositing. Based on this pipeline, we build TextSculpt-Data, a large-scale dataset containing 3.2M training samples, including 1.2M OCR-verified text-to-image samples and 2M paired text editing samples with naturally aligned source-target images and strong background consistency. We further introduce TextSculpt-Bench, a benchmark covering four fundamental text editing tasks: text addition, text replacement, text removal, and hybrid editing. To support reliable evaluation, we design a tailored protocol that measures text accuracy, visual quality, and background preservation through OCR-based text alignment, multimodal judgment, and background-region similarity. Extensive experiments show that TextSculptor improves open-source text editing performance and narrows the gap to proprietary models. The data and benchmark are available at https://github.com/linyiheng123/TextSculptor.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/28/2605.27750v1-reading-or-guessing-visual-grounding-failures-of-vision-language-models-for-ocr-in-ancient-greek-editions",
+      "section": "quick",
+      "title_en": "Reading or Guessing? Visual Grounding Failures of Vision-Language Models for OCR in Ancient Greek Editions",
+      "authors": "Antonia Karamolegkou, Nicolas Angleraud, Benoît Sagot, Thibault Clérice",
+      "date": "2026-05-26",
+      "pdf": "https://arxiv.org/pdf/2605.27750v1",
+      "score": "6.0",
+      "evidence": "分析VLM在OCR中的视觉定位失败",
+      "tldr": "论文针对视觉语言模型（VLM）在低资源古希腊文献OCR中生成流畅但视觉无支撑文本的问题，提出通过图像扰动和token级视觉基础度量分析模型对语言先验的依赖。实验发现传统OCR在扰动下保持忠实，而VLM产生流畅错误；但模型间差异显著：OCR专用模型错误时依赖图像少，通用VLM则仍依赖。解码干预无法恢复视觉基础，后OCR语言模型校正可提升性能。结论强调流畅不等于视觉支持，需要可解释性评估。",
+      "tags": "query:du",
+      "abstract_en": "Recent work has shown that Vision-Language Models (VLMs) used for optical character recognition (OCR) can generate plausible but visually unsupported text, suggesting reliance on language priors. Comparing open-weight VLMs with traditional OCR baselines on low-resource Ancient Greek critical editions, we show that VLM errors often remain fluent even when wrong, producing plausible Greek substitutions where traditional engines produce local recognition noise. To analyze visual evidence during decoding, we introduce controlled image perturbations and token-level grounding measures based on conditional versus image-free decoding distributions. Under character-level perturbations, VLMs diverge sharply from the perturbed ground truth while traditional OCR remains comparatively faithful; however, token-level analysis shows that prior reliance is model-specific: in an OCR-specialist model, fluent lexical errors are produced with little reliance on the image, whereas general-purpose VLMs remain conditioned on the visual input even when wrong. Decode-time interventions fail to reliably restore grounding, while post-OCR language-model correction improves several systems only by repairing text after generation. Our results extend prior evidence of OCR language-prior reliance to low-resource historical documents and a broader set of models, showing that fluent output is not necessarily visually grounded and motivating interpretability-driven evaluation beyond aggregate accuracy.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
