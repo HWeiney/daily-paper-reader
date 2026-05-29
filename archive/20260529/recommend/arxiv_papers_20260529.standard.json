@@ -1,0 +1,394 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-29T21:18:03.868732+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [
+    {
+      "id": "2605.29826v1",
+      "source": "arxiv",
+      "title": "Towards Localized and Disentangled Knowledge Editing for Multimodal Large Language Models",
+      "abstract": "Existing methods in Multimodal Knowledge Editing (MKE) have advanced the ability to correct outdated or inaccurate knowledge in Multimodal Large Language Models (MLLMs). However, they exhibit a critical limitation: while effectively modifying target factual pairs, they fail to generalize edits to logically related queries and often cause unintended alterations to unrelated but visually or semantically linked information. We identify and formalize two underlying failure modes causing this issue: Causal Misalignment, which confines edits to the specific sample, and Feature Entanglement, which causes unintended alterations to coupled but irrelevant information. To address these issues, we propose Localized and Disentangled Knowledge Editing (LDKE), a new framework that achieves precise and generalized editing by localizing fact-specific model layers and disentangling target-relevant inputs from irrelevant ones. Our approach introduces a Fast Localization module to identify and update critical layers efficiently, along with a Disentanglement Classifier that routes inputs appropriately to preserve unrelated knowledge. Extensive experiments across various benchmarks and MLLMs demonstrate that LDKE achieves superior performance in propagating edits to related contexts while maintaining high locality.",
+      "authors": [
+        "Leijiang Gu",
+        "Zhen Zeng",
+        "Feng Li",
+        "Xinjian Gao",
+        "Zenglin Shi"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-05-28T12:06:39+00:00",
+      "link": "https://arxiv.org/pdf/2605.29826v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "addresses knowledge editing in multimodal LLMs",
+      "llm_evidence_cn": "针对多模态大语言模型的知识编辑问题",
+      "llm_evidence": "针对多模态大语言模型的知识编辑问题",
+      "canonical_evidence": "针对多模态大语言模型的知识编辑问题",
+      "llm_tldr_en": "Proposes Localized and Disentangled Knowledge Editing to fix causal misalignment and feature entanglement in MLLMs, enabling precise edits without unintended alterations.",
+      "llm_tldr_cn": "多模态大语言模型知识编辑方法存在编辑未泛化到相关查询以及意外修改无关信息的问题。本文识别出因果错配和特征纠缠两个故障模式，并提出局部化与解耦知识编辑方法，通过隔离编辑范围和解耦特征表示，在保持模型性能的同时实现精确知识更新。实验证明该方法有效提升了编辑的泛化性与局域性，为MLLM的安全更新提供新思路。",
+      "llm_tldr": "多模态大语言模型知识编辑方法存在编辑未泛化到相关查询以及意外修改无关信息的问题。本文识别出因果错配和特征纠缠两个故障模式，并提出局部化与解耦知识编辑方法，通过隔离编辑范围和解耦特征表示，在保持模型性能的同时实现精确知识更新。实验证明该方法有效提升了编辑的泛化性与局域性，为MLLM的安全更新提供新思路。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "multimodal large language model",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.30307v1",
+      "source": "arxiv",
+      "title": "Grounded 3D-Aware Spatial Vision-Language Modeling",
+      "abstract": "We present GR3D, a spatial vision language model equipped with three complementary grounding capabilities--explicit 2D grounding, implicit 2D grounding, and monocular 3D grounding--within a single framework. GR3D introduces an implicit grounding mechanism that identifies entity mentions during generation and inserts the corresponding region tokens into the text stream, allowing the model to reference visual evidence on the fly when producing spatial chain-of-thought responses. In parallel, a region-prompted monocular 3D grounding design predicts 3D bounding boxes in the camera view from grounded region queries, supported by intrinsic-aware normalization and dense geometric supervision. Together, these grounding capabilities enable GR3D to decompose complex spatial understanding problems into grounded 2D perception followed by 3D inference. GR3D achieves consistent improvements across grounded and non-grounded spatial benchmarks, demonstrating grounding as an effective inductive bias for strengthening spatial understanding in VLMs. These grounding capabilities collectively enhance general spatial understanding beyond the grounding task itself.",
+      "authors": [
+        "An-Chieh Cheng",
+        "Yang Fu",
+        "Yatai Ji",
+        "Ligeng Zhu",
+        "Guanqi Zhan",
+        "Zhuoyang Zhang",
+        "Zhaojing Yang",
+        "Song Han",
+        "Yao Lu",
+        "Pavlo Molchanov",
+        "Vidya Nariyambut Murali",
+        "Jan Kautz",
+        "Xiaolong Wang",
+        "Hongxu Yin",
+        "Sifei Liu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-28T17:51:38+00:00",
+      "link": "https://arxiv.org/pdf/2605.30307v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "explicit and implicit 2D grounding with bounding box prediction for spatial understanding",
+      "llm_evidence_cn": "显式和隐式2D定位与边界框预测，用于空间理解",
+      "llm_evidence": "显式和隐式2D定位与边界框预测，用于空间理解",
+      "canonical_evidence": "显式和隐式2D定位与边界框预测，用于空间理解",
+      "llm_tldr_en": "GR3D integrates explicit/implicit 2D grounding and monocular 3D grounding in a single framework, enabling on-the-fly region token insertion and 3D bounding box prediction for spatial chain-of-thought responses.",
+      "llm_tldr_cn": "视觉定位能力是多模态模型理解空间关系的关键。GR3D提出了一个统一的框架，同时支持显式2D定位、隐式2D定位和单目3D定位，其中隐式定位机制在生成过程中动态插入区域标记，使模型能够实时引用视觉证据。实验表明其能有效分解复杂空间理解任务，在多个基准上达到先进性能，直接适用于文档图像中文本与区域的关联定位。",
+      "llm_tldr": "视觉定位能力是多模态模型理解空间关系的关键。GR3D提出了一个统一的框架，同时支持显式2D定位、隐式2D定位和单目3D定位，其中隐式定位机制在生成过程中动态插入区域标记，使模型能够实时引用视觉证据。实验表明其能有效分解复杂空间理解任务，在多个基准上达到先进性能，直接适用于文档图像中文本与区域的关联定位。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.22100v2",
+      "source": "arxiv",
+      "title": "MPDocBench-Parse: Benchmarking Practical Multi-page Document Parsing",
+      "abstract": "Document parsing converts visually rich documents into machine-readable structured representations, forming a crucial foundation for information systems. Although many benchmarks have been proposed for document parsing, they remain inadequate for realistic scenarios. Existing benchmarks either focus on specific tasks or assess only single-page, text-centric settings, making them insufficient for practical multi-page parsing. Moreover, they lack fine-grained evaluation of semantic continuity, hierarchical structure recovery, and visual content preservation. To address these gaps, we propose MPDocBench-Parse, a benchmark for multi-page document parsing in real-world applications. It contains 433 manually annotated documents with 3,246 pages, covering 15 document types in English and Chinese, with diverse layout styles, and supports document-level end-to-end evaluation. We further design a comprehensive protocol for content fidelity and logical structure, covering text, table, and formula recognition, truncated text and table merging, figure extraction, reading order, and heading hierarchy recovery. Experiments show that, while existing models perform well on basic text extraction, they still suffer clear limitations in semantic continuity integration, visual content parsing, and hierarchical structure recovery. MPDocBench-Parse provides a unified foundation for advancing document parsing toward more realistic scenarios.",
+      "authors": [
+        "Bangbang Zhou",
+        "Hangdi Xing",
+        "Yifan Chen",
+        "Jianjun Xu",
+        "Qi Zheng",
+        "Feiyu Gao",
+        "Zhibo Yang",
+        "Shuai Bai",
+        "Ming Yan",
+        "Jieping Ye",
+        "Hongtao Xie"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-05-21T07:36:41+00:00",
+      "link": "https://arxiv.org/pdf/2605.22100v2",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "benchmark for multi-page document parsing with fine-grained evaluation",
+      "llm_evidence_cn": "多页文档解析基准，包含细粒度评估",
+      "llm_evidence": "多页文档解析基准，包含细粒度评估",
+      "canonical_evidence": "多页文档解析基准，包含细粒度评估",
+      "llm_tldr_en": "MPDocBench-Parse is a comprehensive benchmark for multi-page document parsing, featuring 433 annotated documents and 3,246 pages across 15 domains, with metrics for semantic continuity and hierarchy.",
+      "llm_tldr_cn": "现有文档解析基准多集中于单页或特定任务，难以评估实际多页场景。本文提出MPDocBench-Parse，包含433份手工标注的多页文档（共3246页），覆盖15个领域，并引入语义连续性、层次结构恢复和视觉内容保留等细粒度评估指标。该基准推动了文档理解领域的标准化评估，尤其适用于多页复杂文档。",
+      "llm_tldr": "现有文档解析基准多集中于单页或特定任务，难以评估实际多页场景。本文提出MPDocBench-Parse，包含433份手工标注的多页文档（共3246页），覆盖15个领域，并引入语义连续性、层次结构恢复和视觉内容保留等细粒度评估指标。该基准推动了文档理解领域的标准化评估，尤其适用于多页复杂文档。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "document understanding",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.30027v1",
+      "source": "arxiv",
+      "title": "DocRetriever: A Plug-and-Play Framework for Multimodal Document Retrieval with Comprehensive Benchmark",
+      "abstract": "Multimodal documents contain diverse elements, such as tables, figures, and layouts, which can complicate retrieval tasks. While current approaches typically combine dense visual embedding models with supervised rerankers to achieve high-precision retrieval, they face inherent limitations. First, the coarse-grained nature of dense embeddings tends to obfuscate explicit semantics, failing to leverage structurally salient information. Second, supervised reranking models suffer from generalization bottlenecks, as their performance heavily relies on domain-specific training data. Furthermore, existing benchmarks often lack diverse assessment dimensions and comprehensive relevance annotations, limiting reliable evaluation. To address these challenges, we propose DocRetriever, a plug-and-play framework. It enhances visual retrieval via a layout-aware sparse embedding technique, enabling effective hybrid encoding without the overhead of optical character recognition (OCR). We also introduce a generalizable reranker that leverages reasoning-augmented demonstrations and optimized sampling to improve accuracy in few-shot settings. Finally, we construct a new benchmark, MultiDocR, to enable more rigorous evaluation. Experiments across diverse benchmarks validate DocRetriever's superiority over state-of-the-art methods.",
+      "authors": [
+        "Ruofan Hu",
+        "Menghui Zhu",
+        "Jieming Zhu",
+        "Bo Chen",
+        "Shengyang Xu",
+        "Minjie Hong",
+        "Xiaoda Yang",
+        "Sashuai Zhou",
+        "Li Tang",
+        "Tao Jin",
+        "Zhou Zhao"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.IR"
+      ],
+      "published": "2026-05-28T14:50:53+00:00",
+      "link": "https://arxiv.org/pdf/2605.30027v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Multimodal document retrieval leveraging layout and visual elements",
+      "llm_evidence_cn": "利用布局和视觉元素的多模态文档检索",
+      "llm_evidence": "利用布局和视觉元素的多模态文档检索",
+      "canonical_evidence": "利用布局和视觉元素的多模态文档检索",
+      "llm_tldr_en": "DocRetriever proposes a plug-and-play framework for multimodal document retrieval combining dense visual embeddings with explicit structural awareness, and provides a comprehensive benchmark for evaluation.",
+      "llm_tldr_cn": "现有文档检索方法受限于粗粒度密集嵌入和领域特定的重排序模型，难以泛化。本文提出DocRetriever，一种即插即用的多模态文档检索框架，通过引入显式结构感知机制和通用重排序策略，有效提升检索精度。在包含多种文档类型和查询的基准上，DocRetriever优于现有方法，证明了其对布局和视觉信息的利用能力，为多模态文档理解提供了实用工具。",
+      "llm_tldr": "现有文档检索方法受限于粗粒度密集嵌入和领域特定的重排序模型，难以泛化。本文提出DocRetriever，一种即插即用的多模态文档检索框架，通过引入显式结构感知机制和通用重排序策略，有效提升检索精度。在包含多种文档类型和查询的基准上，DocRetriever优于现有方法，证明了其对布局和视觉信息的利用能力，为多模态文档理解提供了实用工具。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "document understanding",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2605.30126v1",
+      "source": "arxiv",
+      "title": "PARCEL: Pool-Anchored Resampling with Conditioned Elastic Queries for Efficient Vision-Language Understanding",
+      "abstract": "Large Vision-Language Models (LVLMs) map visual inputs into dense token sequences, imposing a quadratic computational bottleneck for inference. Elastic visual-token compression addresses this by training a single model that can run at multiple visual-token budgets. However, existing approaches struggle under aggressive compression. Spatial-only compression, as in nested pooling, behaves as an imperfect low-pass filter and induces spectral aliasing that obscures fine-grained detail. Query-only compression, as in nested query resampling, replaces explicit grid-aligned tokens with non-local summaries and substantially degrades spatial grounding. To resolve this representational conflict, we introduce PARCEL (Pool-Anchored Resampling with Conditioned Elastic Queries for Efficient Vision-Language Understanding), a visual tokenization architecture that dynamically partitions the labor of feature extraction. PARCEL establishes spatial pool tokens as low-frequency layout anchors and conditions elastic query tokens on these anchors through Pool-Conditioned Query Resampling. This encourages query tokens to focus on complementary visual features rather than redundant spatial mapping. Extensive evaluations across 27 benchmarks show that PARCEL improves the performance-efficiency Pareto frontier, consistently outperforming existing matryoshka baselines across visual-token budgets while preserving the \"train once, deploy anywhere\" paradigm.",
+      "authors": [
+        "Selim Kuzucu",
+        "Alessio Tonioni",
+        "Vasile Lup",
+        "Bernt Schiele",
+        "Federico Tombari",
+        "Muhammad Ferjad Naeem"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-05-28T15:57:31+00:00",
+      "link": "https://arxiv.org/pdf/2605.30126v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "improves spatial grounding in vision-language models",
+      "llm_evidence_cn": "提升视觉语言模型中的空间定位能力",
+      "llm_evidence": "提升视觉语言模型中的空间定位能力",
+      "canonical_evidence": "提升视觉语言模型中的空间定位能力",
+      "llm_tldr_en": "PARCEL addresses spatial grounding degradation under aggressive visual token compression by combining pool-anchored resampling with elastic queries.",
+      "llm_tldr_cn": "大规模视觉语言模型面临推理计算瓶颈，现有视觉token压缩方法在激进压缩下会严重损害空间定位能力。本文提出PARCEL，通过池锚定重采样和条件弹性查询，在保持高效压缩的同时保留精细空间细节。实验表明该方法在多种视觉定位任务上优于现有压缩策略，为高效视觉语言理解提供了新思路。",
+      "llm_tldr": "大规模视觉语言模型面临推理计算瓶颈，现有视觉token压缩方法在激进压缩下会严重损害空间定位能力。本文提出PARCEL，通过池锚定重采样和条件弹性查询，在保持高效压缩的同时保留精细空间细节。实验表明该方法在多种视觉定位任务上优于现有压缩策略，为高效视觉语言理解提供了新思路。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.26615v1",
+      "source": "arxiv",
+      "title": "FAST-GOAL: Fast and Efficient Global-local Object Alignment Learning",
+      "abstract": "Vision-language models such as CLIP have shown impressive capabilities in aligning images and text, but they often struggle with lengthy and detailed text descriptions due to pre-training on short and concise captions. We present FAST-GOAL (Fast and Efficient Global-local Object Alignment Learning), an efficient fine-tuning method that enhances ability of CLIP to handle lengthy text through global-local semantic alignment. Our method consists of two key components. First, Fast Local Image-Sentence Matching (FLISM) efficiently extracts local image regions through object detection and spatial division, then matches them with corresponding sentences. Second, Token Similarity-based Learning (TSL) maximizes the similarity between patch tokens from specific regions in the image and their corresponding region embeddings, applying the same principle to text, which enhances the ability of the model to capture detailed correspondences. Additionally, we introduce GLIT100k, a dataset that provides both global image-lengthy caption pairs and context-derived local pairs, where local descriptions are extracted from global captions to maintain semantic coherence. Through extensive experiments on long caption datasets (DOCCI, DCI) and short caption datasets (MSCOCO, Flickr30k), we demonstrate that FAST-GOAL achieves significant improvements over baselines, enabling effective adaptation of CLIP to detailed textual descriptions while maintaining computational efficiency.",
+      "authors": [
+        "Hyungyu Choi",
+        "Young Kyun Jang",
+        "Chanho Eom"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-05-26T06:52:46+00:00",
+      "link": "https://arxiv.org/pdf/2605.26615v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "local image-text matching via object detection and spatial division",
+      "llm_evidence_cn": "通过目标检测和空间划分进行局部图像-文本匹配",
+      "llm_evidence": "通过目标检测和空间划分进行局部图像-文本匹配",
+      "canonical_evidence": "通过目标检测和空间划分进行局部图像-文本匹配",
+      "llm_tldr_en": "FAST-GOAL enhances CLIP for lengthy descriptions via global-local alignment, using Fast Local Image-Sentence Matching and Token Similarity Learning to extract and match local regions with text.",
+      "llm_tldr_cn": "针对视觉语言模型CLIP对长文本描述匹配不佳的问题，本文提出FAST-GOAL微调方法。其核心包括快速局部图像-句子匹配（FLISM），利用目标检测和空间划分提取局部区域并匹配对应文本；以及Token相似性学习（TSL），最大化特定patch token与文本标记的相似度。在多个基准上验证了该方法能显著提升CLIP处理长描述的能力，为视觉定位与细粒度对齐提供了高效方案。",
+      "llm_tldr": "针对视觉语言模型CLIP对长文本描述匹配不佳的问题，本文提出FAST-GOAL微调方法。其核心包括快速局部图像-句子匹配（FLISM），利用目标检测和空间划分提取局部区域并匹配对应文本；以及Token相似性学习（TSL），最大化特定patch token与文本标记的相似度。在多个基准上验证了该方法能显著提升CLIP处理长描述的能力，为视觉定位与细粒度对齐提供了高效方案。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.28348v1",
+      "source": "arxiv",
+      "title": "Toward Semantic-Agnostic and Shape-Aware Vision-Language Segmentation Models",
+      "abstract": "Vision-language segmentation models have recently achieved strong performance by leveraging high-level semantic object categories expressed in natural language. However, this semantic dependence limits their ability to reason about intrinsic visual properties such as shape, geometry, or texture, which are essential in many real-world applications. In this work, we introduce Semantic-Agnostic aNd Shape-Aware (SANSA) segmentation, a new paradigm that requires segmentation models to operate solely from non-semantic textual descriptions. To this end, we propose two strategies to generate SANSA segmentation prompts based on either dictionary constraints or example guidance, both generating semantic-agnostic textual descriptions. These prompts are then used to finetune segmentation models under semantic-agnostic supervision. Experiments show that finetuning on SANSA prompts yields up to a 20% mIoU improvement on this new segmentation task, compared to pretrained state-of-the-art models, while maintaining strong performance on standard semantic prompts. These results highlight the importance of low- and mid-level visual reasoning for improving the generalization and controllability of vision-language segmentation models.",
+      "authors": [
+        "Corentin Seutin",
+        "Mohamed Amine Ettaki",
+        "Michaël Clément",
+        "Pierrick Coupé",
+        "Rémi Giraud"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-27T11:51:33+00:00",
+      "link": "https://arxiv.org/pdf/2605.28348v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "shape-aware segmentation with layout-like properties",
+      "llm_evidence_cn": "感知形状的分割，具有类似布局的属性",
+      "llm_evidence": "感知形状的分割，具有类似布局的属性",
+      "canonical_evidence": "感知形状的分割，具有类似布局的属性",
+      "llm_tldr_en": "SANSA proposes semantic-agnostic segmentation focusing on shape and geometry, relevant to layout-aware representation.",
+      "llm_tldr_cn": "现有视觉语言分割模型依赖语义类别，限制了形状、几何等内在属性的推理。本文提出SANSA分割范式，要求模型仅根据非语义文本描述（如形状描述）进行分割，并设计了两种提示生成策略。该方法鼓励模型关注形状和布局特征，对布局感知表示学习具有启发意义。",
+      "llm_tldr": "现有视觉语言分割模型依赖语义类别，限制了形状、几何等内在属性的推理。本文提出SANSA分割范式，要求模型仅根据非语义文本描述（如形状描述）进行分割，并设计了两种提示生成策略。该方法鼓励模型关注形状和布局特征，对布局感知表示学习具有启发意义。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "layout-aware representation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.28490v1",
+      "source": "arxiv",
+      "title": "SSR3D-LLM: Structured Spatial Reasoning via Latent Steps for Fine-Grained Grounding in Unified 3D-LLMs",
+      "abstract": "3D object grounding localizes referred objects in a 3D scene from natural language. Unified instance-centric 3D-LLMs aim to solve grounding together with dialog, QA, and captioning, yet many rely on a single pointer-style grounding decision that compresses a relational instruction into one selection. This is brittle for fine-grained queries where multiple same-class candidates must be ruled out by context objects and spatial relations. We propose Structured Spatial Reasoning 3D-LLM (SSR3D-LLM), a structured grounding interface for unified 3D-LLMs. Given fixed Mask3D object proposals, the LLM writes a sequence of latent spatial reasoning steps and memory tokens from the query, and a geometry-aware scorer reads these latent steps in order to refine candidate rankings step by step with step-length masking. The latent steps are learned from standard benchmark target supervision with auxiliary referential-cue supervision during training, while inference uses only the input query and Mask3D proposals. Across ReferIt3D, ScanRefer, and Multi3DRef, SSR3D-LLM achieves the strongest results among unified 3D-LLM baselines, with substantial gains over the single-pointer QPG baseline on fine-grained grounding and consistent improvements over prior unified 3D-LLMs, while preserving the default language-task route.",
+      "authors": [
+        "Jiawei Li",
+        "Ziyi Liu",
+        "Weijie Shi",
+        "Long Chen",
+        "Jiajie Xu",
+        "Xiaofang Zhou"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-05-27T13:45:34+00:00",
+      "link": "https://arxiv.org/pdf/2605.28490v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "structured spatial reasoning for fine-grained 3D grounding, transferable to visual grounding",
+      "llm_evidence_cn": "结构化空间推理实现细粒度3D定位，可迁移至视觉定位",
+      "llm_evidence": "结构化空间推理实现细粒度3D定位，可迁移至视觉定位",
+      "canonical_evidence": "结构化空间推理实现细粒度3D定位，可迁移至视觉定位",
+      "llm_tldr_en": "SSR3D-LLM introduces latent spatial reasoning steps and memory tokens for fine-grained 3D object grounding, improving accuracy in unified 3D-LLMs.",
+      "llm_tldr_cn": "针对统一3D-LLM中细粒度3D物体定位依赖单一指针决策、难以处理同类别多候选的问题，本文提出SSR3D-LLM，引入结构化潜在空间推理步骤和记忆令牌，结合几何感知评分器实现细粒度定位。实验证明该方法在多个基准上提升定位准确率。虽然场景为3D，但其结构化空间推理方法可迁移至文档图像的视觉定位任务。",
+      "llm_tldr": "针对统一3D-LLM中细粒度3D物体定位依赖单一指针决策、难以处理同类别多候选的问题，本文提出SSR3D-LLM，引入结构化潜在空间推理步骤和记忆令牌，结合几何感知评分器实现细粒度定位。实验证明该方法在多个基准上提升定位准确率。虽然场景为3D，但其结构化空间推理方法可迁移至文档图像的视觉定位任务。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "visual grounding",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.29606v1",
+      "source": "arxiv",
+      "title": "HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering",
+      "abstract": "Retrieval-augmented generation (RAG) for document-based Open-domain Question Answering (ODQA) on large-scale industrial corpora faces two critical bottlenecks: routing failure in locating the correct document and evidence fragmentation in integrating scattered information. Existing approaches relying on flat text chunks or page-level images inherently struggle to (i) precisely pinpoint the target document among thousands of candidates and (ii) organically connect multimodal evidence, such as tables and figures, within a limited token budget. To address these challenges, we propose HiKEY, a hierarchical tree-based multimodal retrieval framework that elevates document hierarchy to a first-class retrieval signal. Instead of simple chunking, HiKEY reconstructs a logical heterogeneous graph via Document Hierarchical Parsing (DHP), explicitly encoding parent-child relationships. Adopting a hierarchical coarse-to-fine strategy, the framework (1) performs global routing to rapidly prune the search space using hierarchical indexing, and (2) conducts fine-grained retrieval to rank sections by employing a multimodal fusion strategy that captures the most discriminative evidence. Finally, HiKEY assembles a token-efficient evidence subgraph via a hybrid structural-semantic packing strategy. Experiments on ODQA benchmarks demonstrate that HiKEY significantly outperforms page- and chunk-based baselines, improving retrieval recall by up to 12.9% and end-to-end QA performance by up to 6.8%.",
+      "authors": [
+        "Joongmin Shin",
+        "Gyuho Shim",
+        "Jeongbae Park",
+        "Jaehyung Seo",
+        "Heuiseok Lim"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "published": "2026-05-28T08:42:21+00:00",
+      "link": "https://arxiv.org/pdf/2605.29606v1",
+      "tags": [
+        "keyword:du",
+        "query:du"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Hierarchical multimodal retrieval for document question answering",
+      "llm_evidence_cn": "分层多模态检索用于文档问答",
+      "llm_evidence": "分层多模态检索用于文档问答",
+      "canonical_evidence": "分层多模态检索用于文档问答",
+      "llm_tldr_en": "HiKEY introduces a hierarchical tree-based multimodal retrieval framework that leverages document structure as a first-class signal, improving open-domain document QA by overcoming routing failure and evidence fragmentation.",
+      "llm_tldr_cn": "面向大规模工业语料的开放域文档问答面临文档定位和证据碎片化两大瓶颈。HiKEY提出层次树状多模态检索框架，将文档层次结构作为一级检索信号，通过树形索引精确聚焦目标文档并有机融合多模态证据。实验证明，该方法在数十万文档级别显著优于传统平面分块方法，为RAG系统提供了高效的结构化检索方案。",
+      "llm_tldr": "面向大规模工业语料的开放域文档问答面临文档定位和证据碎片化两大瓶颈。HiKEY提出层次树状多模态检索框架，将文档层次结构作为一级检索信号，通过树形索引精确聚焦目标文档并有机融合多模态证据。实验证明，该方法在数十万文档级别显著优于传统平面分块方法，为RAG系统提供了高效的结构化检索方案。",
+      "llm_tags": [
+        "query:du"
+      ],
+      "matched_query_tag": "query:du",
+      "matched_query_text": "document understanding",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
